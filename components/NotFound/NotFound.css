@@ -1,0 +1,43 @@
+.notfoundContainer {
+    background-color: #20acb8;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    user-select: none;
+}
+
+.notfoundContainer h2 {
+    margin: 0;
+    color: #ffffff;
+}
+
+.notfoundContainer p {
+    margin: 0;
+    color: #e7e7e7;
+    font-weight: lighter;
+}
+
+.notfoundContainer img {
+    width: 200px;
+}
+
+.notfoundContainer a {
+    color: #e7e7e7;
+    font-weight: lighter;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    .notfoundContainer img {
+        width: 150px;
+    }
+
+    .notfoundContainer {
+        font-size: 1.5rem;
+        text-align: center;
+        padding: 0 10px;
+    }
+}

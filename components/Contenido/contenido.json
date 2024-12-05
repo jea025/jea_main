@@ -1,0 +1,348 @@
+
+{
+    "contenidoJSON": [
+        {
+            "id": "0",
+            "titulo": "Ganadores del concurso Promise Brain",
+            "descripcion": "Conocé los trabajos Micaela y de los demás ganadores del concurso Promise Brain. ¡FELICITACIONES CHICOS! ¡Y gracias Mica por participar en el programa!",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "1",
+            "titulo": "Jóvenes creativos",
+            "descripcion": "Estudiantes universitarios diseñan publicidades o campañas de concientización para generar conductas positivas.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "2",
+            "titulo": "La embajada de los Estados Unidos ofrece becas a estudiantes argentinos",
+            "descripcion": "La Embajada de los Estados Unidos informa que se encuentra abierta la inscripción para participar en los “Programas para Jóvenes” que se llevarán a cabo entre los meses de junio y julio de 2011. Estos programas están diseñados para enviar estudiantes de escuelas secundarias de todo el país a los Estados Unidos. El objetivo de ellos es ofrecer a los jóvenes nuevas oportunidades y experiencias internacionales para profundizar su conocimiento sobre la cultura, la sociedad y la educación estadounidense; así como también para compartir la cultura argentina con otras personas de los Estados Unidos.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "3",
+            "titulo": "Jóvenes sin estudios ni trabajo",
+            "descripcion": "Un 25% de las personas que tienen entre 18 y 24 años carecen de capacitación y empleo; la deficiente educación secundaria es una de las razones del fenómeno. ",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "4",
+            "titulo": "Becas privadas, la mejor inversión",
+            "descripcion": "Más de 13 millones de pesos se destinan anualmente en la Argentina en la transferencia monetaria de los alumnos que reciben becas del sector privado, según indicó el informe sobre programas de becas educativas, presentado recientemente. Alrededor de 10.000 chicos y jóvenes de los niveles primario, medio y universitario se ven beneficiados con un aporte promedio de 100 pesos mensuales, otorgados por organizaciones de la sociedad civil y empresas del sector privado.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "5",
+            "titulo": "¿Cómo genero mi hábito de estudio?",
+            "descripcion": "¿Cómo es esa transición? ¿Me estaré preparando bien para llegar a la facultad? ¿En qué tendré que mejorar? ¿Tendré hábito de estudio? Todas estas preguntas y más intentaremos responder, brindándoles una Guía de consejos útiles y prácticos para poder afrontar mejor esta etapa, aprendiendo a estudiar.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "6",
+            "titulo": "Analizan el lugar de la mujer en la ciencia",
+            "descripcion": "'Creo que la población está perdiendo la mitad de la potencia del cerebro humano al no estimular a las mujeres a estudiar ciencia', dijo Ada Yonath cuando recibió el Premio Nobel de Química 2009, compartido con dos hombres. Sin embargo, en una encuesta entre 350 estudiantes secundarios, madame Curie es la única mujer que aparece mencionada entre los científicos, según el Centro de Formación e Investigación en Enseñanza de las Ciencias (Cefiec) de la Facultad de Ciencias Exactas y Naturales de la UBA.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "7",
+            "titulo": "¿ Y… ahora qué voy a estudiar?",
+            "descripcion": "Alumnos de colegios secundarios y autoridades de la Universidad Católica Argentina participaron de nuestra mesa redonda en el aire de Jóvenes en acción sobre las dudas y preocupaciones que significan elegir una carrerea universitaria.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "universidad"
+        },
+        {
+            "id": "8",
+            "titulo": "Incubando Salud 2012",
+            "descripcion": "Incubando Salud, la primera incubadora y aceleradora de proyectos en salud de Latinoamérica lanza la segunda convocatoria exclusiva para emprendimientos en salud, dirigida a todas aquellas personas y organizaciones vinculadas al sector que tengan interés en desarrollar emprendimientos innovadores, capaces de mejorar la calidad de vida de las personas.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "9",
+            "titulo": "Convocatoria para el programa Jóvenes Embajadores 2012",
+            "descripcion": "La Embajada de los Estados Unidos y la Organización World Learning informan que se encuentra abierta la convocatoria para los candidatos y acompañantes (mentores) que deseen participar del programa de intercambio cultural y educativo “Jóvenes Embajadores 2012”.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "10",
+            "titulo": "Santander Río Universidades lanzó el Premio Jóvenes Emprendedores 2011",
+            "descripcion": "Premio Jóvenes Emprendedores, una competencia de planes de negocio que fomenta la cultura emprendedora, entregará en su séptima edición $ 130.000 en premios, a distribuir entre los proyectos ganadores y las universidades participantes. Los interesados podrán postularse hasta el 23 de Septiembre de 2011.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "11",
+            "titulo": "Uno de los Jóvenes Ganadores en el 2010 del Premio a Emprendedores, Concurso organizado por Shell y ACDE",
+            "descripcion": "Es una tienda online dedicada a la venta de juguetes retro y de colección. Es decir, es una juguetería online, pero que a diferencia de otras jugueterías está dedicada a los juguetes que por su antigüedad ya no se consiguen. Está pensada para coleccionistas de juguetes, para todo aquel que quiera rememorar su infancia y para los que quieran simplemente tener a su personaje favorito en la estantería. Los juguetes que vendemos son de toda clase, pero generalmente se destacan las colecciones de Star Wars, superhéroes Marvel y DC, soldaditos, autitos, manga y animé, Transformers, Robotech, GI Joe, Thundercats, Los Pitufos, así como también personajes del mundo del cómic, la TV y el cine.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "12",
+            "titulo": "Consejos para armar un currículum exitoso",
+            "descripcion": "El CV es la primera carta de presentación a la hora de buscar un empleo; lanacion.com reunió claves para mejorar su presentación y su eficacia; qué no hay que hacer.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "13",
+            "titulo": "Emociones inteligentes",
+            "descripcion": "Hoy las competencias técnicas no son suficientes. Las habilidades sociales son la clave del liderazgo contemporáneo.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "14",
+            "titulo": "A buen clima laboral, mayor productividad",
+            "descripcion": "Robert Levering, cofundador de Great Place to Work habla sobre los mejores lugares para trabajar. El cofundador de Great Place To Work Institute, Robert Levering, celebra los 25 años de su empresa y opina sobre el pasado, el presente y el futuro de los ambientes de trabajo.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "15",
+            "titulo": "Compleja realidad que debe cambiar",
+            "descripcion": "Según una encuesta realizada por bumeran.com los discapacitados ocupan el primer lugar dentro de los grupos minoritarios que se enfrentan a mayores dificultades para obtener una oportunidad de empleo, pues el 48% de las empresas ven mayores dificultades para incorporarlos y gestionarlos. En segundo lugar, las personas mayores de 50 años con un 32% de las opiniones desfavorables.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "16",
+            "titulo": "Un mundo de perfeccionistas, ¿por qué no funcionan las entrevistas laborales?",
+            "descripcion": "'¿Cuál es su principal debilidad?', pregunta el entrevistador. 'Soy un perfeccionista', responde el candidato. Las entrevistas laborales, a veces, parecen un ping-pong de preguntas prefabricadas y respuestas memorizadas. ¿Cómo mejorar su eficacia?",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "17",
+            "titulo": "Jóvenes con más y mejor trabajo",
+            "descripcion": "Cáritas Mar del Plata informó que fue creado el Programa “Jóvenes con más y mejor trabajo”, con el objeto de generar oportunidades de inclusión social y laboral de los jóvenes a través de acciones integradas que les permitan identificar el perfil profesional en el cual deseen desempeñarse, finalizar su escolaridad obligatoria, realizar experiencias de formación o de prácticas calificantes en ambientes de trabajo, iniciar una actividad productiva de manera independiente o insertarse en un empleo.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "18",
+            "titulo": "Los 10 peores errores en una entrevista de trabajo",
+            "descripcion": "Un portal de internet recopiló las peores cosas que el aspirante a un puesto puede hacer durante una entrevista laboral. Los más vergonzosos. ¿Escuchó la historia sobre un aspirante a un puesto de trabajo que se peinó durante un entrevista o sobre el candidato que se olió las axilas en el camino hacia la sala de la prueba?",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "19",
+            "titulo": "Un puente entre el estudio y el trabajo",
+            "descripcion": "Las universidades acercan a sus alumnos al mundo laboral.En sus marcas, listos, y miles de estudiantes empiezan año a año diferentes carreras universitarias. Pero a medida que avanzan, la meta se vuelve difusa y alcanzar el título no parece ser el único y principal objetivo. Por eso, cada vez más universidades se ocupan de preparar a sus alumnos para el mundo laboral y colaboran en su inserción.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "emprendedores"
+        },
+        {
+            "id": "20",
+            "titulo": "Los jóvenes y su contribución a la realidad social actual",
+            "descripcion": "Los cambios que están experimentando hoy las sociedades ocurren con tanta rapidez que muchas veces no les permiten percibir con claridad cuáles son en verdad los que importan y que, por eso mismo, están destinados a perdurar.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "21",
+            "titulo": "Los jóvenes que mejoran el mundo",
+            "descripcion": "A través de ONG llevan adelante proyectos que genera noportunidades para los más desfavorecidos y cuidan el medio ambiente.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "22",
+            "titulo": "Auto CITROËN C4 donado por CITROËN a la Escuela Técnica Ing. Pablo Nogués",
+            "descripcion": "El auto CITROËN C4 donado por CITROËN a la Escuela Técnica Ing. Pablo Nogués, de la Ciudad de Mendoza, en el marco de su Programa de RSE 'Guardianes de la Educación', por intermedio de Carmen Sicardi, Directora de Jóvenes en Acción y un ex alumno de su Equipo, Juan Pablo Nora.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "23",
+            "titulo": "Llegaron nuestros amigos desde Misiones!!",
+            "descripcion": "Estos chicos vienen llenos de ilusiones a conocer por primera vez Buenos Aires, sueño que logramos cumplir gracias al padrinazgo de “Jóvenes en Acción” dirigido por la Lic. Carmen Sicardi, quien confió y apostó en nuestro proyecto desde el primer momento.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "24",
+            "titulo": "La Lic. Carmen Sicardi ha sido invitada por la Embajada de los EE.UU. en Argentina",
+            "descripcion": "La Lic. Carmen Sicardi ha sido invitada por la Embajada de los EE.UU. en Argentina, a participar en el Programa de Liderazgo de Visitantes Internacionales, el eje del mismo: 'Involucrando a los jóvenes marginados en la sociedad', financiado por el Departamento de Estado y a llevarse a cabo en los EE.UU. (Washington, Baltimore, Oklahoma, Chicago, Los Angeles) en el próximo mes de noviembre.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "25",
+            "titulo": "Último programa del año de “Jóvenes en Acción”",
+            "descripcion": "Jueves 29 de diciembre, fué el último programa del año de “Jóvenes en Acción”, la emisión que desde hace 14 años conduce Carmen Sicardi, de 20 a 21, por Radio Cultura (FM 97.9 Mhz) o se puede seguir en vivo y en directo a través de la página web www.fmradiocultura.com.ar",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "26",
+            "titulo": "Distinguen el trabajo solidario que llega desde el exterior",
+            "descripcion": "HelpArgentina entregó los premios Embajadores Sociales 2011; en lo que va del año, se logró un récord de US$ 900.000 de dólares donados.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "27",
+            "titulo": "Un Techo para mi País Argentina recaudó 1 millón y medio de pesos en la 5ta Colecta Nacional",
+            "descripcion": "Más de 10.000 voluntarios salieron a las calles de Argentina a recaudar fondos en la 5ta Colecta Nacional en Buenos Aires, Córdoba, La Plata, Posadas, Neuquén, Río Cuarto, Salta y Zárate. La recaudación superó el millón de pesos del año pasado y la cifra final fue de 1 millón y medio de pesos. Con estos fondos más lo recaudao en la 4° Gala Anual se podrá financiar la construcción de 250 viviendas y 10 sedes TET 'Techo para Educación y Trabajo'",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "solidaridad"
+        },
+        {
+            "id": "28",
+            "titulo": "Estrés y emociones: hacerte mala sangre te daña el corazón",
+            "descripcion": "La salud cardiovascular se ve afectada por los momentos de tensión. Cómo prevenir y por qué es importante atender a algunas señales.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "29",
+            "titulo": "Tabaco y corazón: revelan que fumar poco también es riesgoso",
+            "descripcion": "La enfermedad cardiovascular (ECV) y el tabaquismo van de la mano: cada vez más estudios epidemiológicos lo demuestran. En ambos sexos, fumar es un factor de riesgo importante de padecimiento cardiovascular, incluso infarto de miocardio, muerte súbita, ACV, vasculopatía periférica y aneurismas aórticos. En comparación con no fumadores, los fumadores tienen un 70% de incremento en el riesgo de ECV letal, y duplican a cuadruplican la posibilidad de presentar ECV no letal y muerte súbita.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "30",
+            "titulo": "Las enfermedades sin fronteras",
+            "descripcion": "LINDAU.- Las callejuelas empedradas que zigzaguean en esta pequeña isla alemana estuvieron más pobladas que de costumbre para esta semana de verano. Así comentaron dos mozos de impecable delantal blanco entre las mesas de uno de los clásicos cafés en Maximilanstraße, la calle principal. Se referían a unos 600 visitantes que caminaron por esta villa bávara durante toda esta semana.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "31",
+            "titulo": "Crece el cáncer de pulmón",
+            "descripcion": "Es un fenómeno global y, como suele suceder, la Argentina no está exenta: mientras la mortalidad por cáncer de pulmón en varones tiende a bajar, entre las mujeres no ha dejado de crecer en los últimos 28 años.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "32",
+            "titulo": "El humo del tabaco causa diabetes",
+            "descripcion": "Afecta tanto a los fumadores como a los no fumadores que están expuestos al tabaquismo pasivo.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "33",
+            "titulo": "Saber cómo tomar el pulso ayuda a detectar una peligrosa arritmia",
+            "descripcion": "La desorganización del ritmo cardíaco (arritmia) predispone a sufrir complicaciones cardiovasculares graves, como el infarto cardíaco y cerebral. Para ayudar a detectarla a tiempo, una organización no gubernamental se propuso lograr que los argentinos aprendamos algo tan sencillo y accesible como tomarnos el pulso.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "34",
+            "titulo": "Cruzada contra el Cáncer de Mama",
+            "descripcion": "Desde hace 11 años, la Fundación Avon en la Argentina realiza una importante campaña de difusión y concientización sobre la detección temprana del cáncer de mama.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "35",
+            "titulo": "El exceso de higiene femenina íntima atenta contra las defensas",
+            "descripcion": "Casi siempre, los excesos juegan en contra. Y eso puede suceder también en el afán por lograr la máxima sensación posible de 'limpieza' íntima femenina mediante las duchas vaginales, el rasurado y el uso de desodorantes o jabones perfumados.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "36",
+            "titulo": "Qué comer antes de hacer ejercicio físico",
+            "descripcion": "Es muy frecuente escuchar que los atletas pregunten «Qué debería comer antes del entrenamiento o competencia?». Desafortunadamente, a menudo reciben el consejo equivocado, y como resultado experimentan fatiga prematura y malestar estomacal durante la actividad.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "37",
+            "titulo": "Papiloma humano: un virus que también es cosa de hombres",
+            "descripcion": "El virus del papiloma humano (HPV), que causa el cáncer de cuello uterino, no es sólo cosa de mujeres. Uno de cada dos hombres sexualmente activos se infectará alguna vez con ese microorganismo, independientemente de cuáles sean sus preferencias para elegir pareja.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "salud y deporte"
+        },
+        {
+            "id": "38",
+            "titulo": "El desafío de ponerse en lugar del otro",
+            "descripcion": "Hay que probar. Hay que taparse los oídos y reducir hasta un 30% la capacidad auditiva, vendarse los ojos, circular por la oficina o el taller durante un día o una semana sobre una silla de ruedas y seguir trabajando como si fuera una situación habitual.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "39",
+            "titulo": "Viviendo sobre ruedas",
+            "descripcion": "A los 9 meses debido a que no tenía el comportamiento de un bebé de esa edad, mi familia me llevó a una consulta con un médico. El neurólogo me diagnosticó una lesión de nacimiento que trajo aparejada una secuela motora. Hice kinesiología a lo largo de toda mi vida. ¿No me he cansado alguna vez? Cualquiera se puede cansar al hacer algo por mucho tiempo. Siempre es bueno cambiar de aire, de sintonía. En mi caso, trato de tomarme las cosas con responsabilidad. No hago gimnasia para estar en forma (si bien nunca dejo de interesarme por ello), sino más bien, para estar mejor físicamente y así contar con las herramientas necesarias para valerme por mí misma. ",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "40",
+            "titulo": "Banco Galicia lanza la VIII Campaña de Redondeo Solidario: 2012/2013",
+            "descripcion": "Banco Galicia presentó a las cuatro entidades de bien público que recibirán los fondos de esta nueva Campaña así como nuevas formas de colaborar. Con la Campaña anterior, a través del apoyo de más de 18.300 clientes, se pudieron donar más de $420.000 a PROYECTOS SOLIDARIOS",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "41",
+            "titulo": "Dell invita a los emprendedores universitarios a transformar el mundo en el Dell Innovation Challenge",
+            "descripcion": "· Por sexto año consecutivo Dell ofrece las herramientas, la experiencia y el financiamiento para ayudar a impulsar el espíritu empresarial en universitarios. Se han presentado más de 3,000 alentadores proyectos de innovación social provenientes de 90 países. Este año son más de 27 premios en total y más de $142,000 dólares en efectivo.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "42",
+            "titulo": "Para las áreas de Recursos Humanos el desafío es acompañar el crecimiento",
+            "descripcion": "Atracción y retención de talentos, convivencia generacional y compensaciones: la agenda de RR.HH. Políticas innovadoras en compensaciones y beneficios junto con planes de jóvenes profesionales y de desarrollo de carrera forman parte del arsenal de herramientas con el que las empresas encaran los desafíos de la gestión de personas, en un contexto de expansión de los negocios.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "43",
+            "titulo": "Seminario en EE.UU. para estudiantes universitarios destacados",
+            "descripcion": "Objetivo: Brindar a jovenes estudiantes la oportunidad de participar en un seminario intensivo para ampliar los conocimientos sobre los Estados Unidos: historia, gobierno, cultura, valores e instituciones, Perfeccionar las capacidades de liderazgo de los participantes.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "44",
+            "titulo": "McDonald's Argentina, 25 años comprometidos con el medio ambiente",
+            "descripcion": "McDonald's Argentina se suma al festejo del Día Internacional del Medio Ambiente con iniciativas concretas que promueven comportamientos de respeto hacia cada miembro integrante del ecosistema que buscan preservar el presente para poder tener un futuro sustentable.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "45",
+            "titulo": "Becas privadas, la mejor inversión",
+            "descripcion": "Muchos jóvenes que terminan sus estudios gracias a la asistencia de empresas se convierten en acompañantes de becados.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "46",
+            "titulo": "Kimberly-Clark junto a los alumnos del Centro de Equinoterapia Valle Azul en San Luis",
+            "descripcion": "El Centro de Equinoterapia funciona en la ciudad de San Luis, donde Kimberly-Clark posee una de sus plantas. La iniciativa forma parte de +comUNIDAD, el programa de relaciones con la comunidad de la compañía basado en tres pilares: Salud, Educación y Calidad de vida.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "47",
+            "titulo": "Programa de desarrollo de las capacidades empresariales en Río Grande, Tierra del Fuego",
+            "descripcion": "Entrenamiento y Asesoramiento a Empresarios Acto de Entrega de Diplomas, Río Grande, año 2005 (9 min)",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "integración vs discriminación"
+        },
+        {
+            "id": "48",
+            "titulo": "NOVEDAD 2012 de Jóvenes en Acción",
+            "descripcion": "Este año inauguramos el Proyecto de Salidas Culturales, Recreativas e Integradoras. Arrancamos con Ciclos de Cine Debate, ¡y vamos por más! Desde marzo, jóvenes de entre 17 y 25 años nos reunimos para tomar algo, ver una película (en Village Cines o en un salón que consigamos) y generar un espacio de profundo debate a través del cine. Así logramos conocernos, intercambiar experiencias y vivencias. Si bien provenimos de distintos barrios y realidades, tenemos en común el querer salir adelante por medio del estudio, la capacitación y el trabajo.",
+            "imgUrl": "../../public/contenido.jpg",
+            "categoria": "tiempo libre"
+        }
+    ]
+}
