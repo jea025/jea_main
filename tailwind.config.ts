@@ -11,6 +11,7 @@ export default {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customCyan: 'rgb(32, 170, 182)',
       },
     },
   },
