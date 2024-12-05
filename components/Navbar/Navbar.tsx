@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import React, { useState } from "react";
 import "./Navbar.css";
 import Home from "../Home/Home";
@@ -8,8 +8,8 @@ import Prensa from "../Prensa/Prensa";
 import Enlaces from "../Enlaces/Enlaces";
 import Image from "next/image";
 import Link from "next/link";
-import logo from "../../public/logo.png"
-import ham from "../../public/ham.svg"
+import logo from "../../public/logo.png";
+import ham from "../../public/ham.svg";
 
 // Definimos el tipo para las secciones
 type Section = "home" | "nosotros" | "contacto" | "prensa" | "enlaces";
@@ -45,70 +45,41 @@ const Navbar: React.FC = () => {
     });
   };
 
-  // Renderizar el componente según la sección activa
-  const renderSection = () => {
-    switch (activeSection) {
-      case "home":
-        return <Home />;
-      case "nosotros":
-        return <Nosotros />;
-      case "contacto":
-        return <Contacto />;
-      case "prensa":
-        return <Prensa />;
-      case "enlaces":
-        return <Enlaces />;
-      default:
-        return <Home />;
-    }
-  };
+
 
   return (
     <div className="navbarContainer">
       <nav>
-        <Link href={"/home"}>
-          <Image
-            className="margin"
-            src={logo}
-            alt="logo"
-          />
-        </Link>
+        <Image className="margin" src={logo} alt="logo" />
         <div className="navButtons">
-          <button
-            id="home"
-            className="navButton homeStyle"
-            onClick={() => handleNavigation("home")}
-          >
-            HOME
-          </button>
-          <button
-            id="nosotros"
-            className="navButton"
-            onClick={() => handleNavigation("nosotros")}
-          >
-            NOSOTROS
-          </button>
-          <button
-            id="contacto"
-            className="navButton"
-            onClick={() => handleNavigation("contacto")}
-          >
-            CONTACTO
-          </button>
-          <button
-            id="prensa"
-            className="navButton"
-            onClick={() => handleNavigation("prensa")}
-          >
-            PRENSA
-          </button>
-          <button
-            id="enlaces"
-            className="navButton"
-            onClick={() => handleNavigation("enlaces")}
-          >
-            ENLACES
-          </button>
+          <Link href={"/home"}>
+            <button id="home" className="navButton homeStyle">
+              HOME
+            </button>
+          </Link>
+          <Link href={"/nosotros"}>
+            <button id="nosotros" className="navButton">
+              NOSOTROS
+            </button>
+          </Link>
+          <Link href={"/contacto"}>
+            <button id="contacto" className="navButton">
+              CONTACTO
+            </button>
+          </Link>
+          <Link href={"/prensa"}>
+            <button id="prensa" className="navButton">
+              PRENSA
+            </button>
+          </Link>
+          <Link href={'/enlaces'}>
+            <button
+              id="enlaces"
+              className="navButton"
+            >
+              ENLACES
+            </button>
+          </Link>
         </div>
         <div className="hamNav margin">
           <input className="hamCheck" type="checkbox" id="ham" />
@@ -154,7 +125,7 @@ const Navbar: React.FC = () => {
           </div>
         </div>
       </nav>
-      {renderSection()}
+
     </div>
   );
 };
