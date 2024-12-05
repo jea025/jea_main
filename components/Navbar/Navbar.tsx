@@ -3,12 +3,12 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/logo.png";
-import { usePathname } from "next/navigation"; // Importar usePathname
+import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
   const pathname = usePathname(); 
-  const activeClass = "border-l-2 border-white text-white font-bold"; // Estilo para el enlace activo
-  const defaultClass = "text-white hover:text-gray-300"; // Estilo por defecto
+  const activeClass = "border-l-2 border-white text-white font-bold";
+  const defaultClass = "text-white hover:text-gray-300";
 
   return (
     <div className="w-full h-16">
