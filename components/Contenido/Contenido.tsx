@@ -1,10 +1,11 @@
 "use client";
-import "./Contenido.css";
+
 import Noticia from "../Noticia/Noticia";
 import contenido from "./contenido.json";
 import NoticiasVacias from "../NoticiasVacias/NoticiasVacias";
 import Spinner from "../Spinner/Spinner";
 import React, { useState, useEffect } from "react"; //hooks
+
 
 /*
     1-se usa el esado loading para mostrar que carga hasta q llega la informacion(fetch)
@@ -12,7 +13,12 @@ import React, { useState, useEffect } from "react"; //hooks
     3-se usa el hook useEffect para renderizar la noticia solo si primero tengo la informacion disponible
     4- 
 */
-const Contenido = ({ categoria }) => {
+
+interface propsCategoria{
+  categoria: string;
+}
+
+export default function Contenido({categoria}: propsCategoria ){
   const [loading, setLoading] = useState(true);
   const [arrCategoria, setArrCategoria] = useState([]);
 
@@ -36,7 +42,6 @@ const Contenido = ({ categoria }) => {
               titulo={noticia.titulo}
               descripcion={noticia.descripcion}
               imgUrl={noticia.imgUrl}
-              masUrl={`/noticia/${noticia.id}`}
               categoria={noticia.categoria}
             />
           )
@@ -52,10 +57,10 @@ const Contenido = ({ categoria }) => {
 
       // BORRAR ===============================================
       setTimeout(() => {
-        //se usa para relentizar 1,5 segundos cuando va a mostrar la noticia simulando la llegada de informacion a traves de la base de datos
+        //se usa para relentizar 0,5 segundos cuando va a mostrar la noticia simulando la llegada de informacion a traves de la base de datos
         setArrCategoria(dataFiltrada);
         setLoading(false);
-      }, 1500);
+      }, 500);
       // BORRAR ===============================================
     };
 
@@ -65,9 +70,9 @@ const Contenido = ({ categoria }) => {
   return (
     //se usa el ternario para que cuando loading sea true se renderize el spinner y si no, que se renderize la noticia correspondiente
     //si la noticia esta vacia se renderiza el componente q avisa q no hya noticia
-    <div className="contenidoContainer">
-      <h2>
-        <span>|</span> {categoria}
+    <div className="w-5/6 h-auto mb-24 flex flex-col justify-center gap-10">
+      <h2 className="uppercase text-4xl select-none">
+        <span className="text-customCyan2">|</span> {categoria}
       </h2>
       {loading ? (
         <Spinner />
@@ -80,4 +85,3 @@ const Contenido = ({ categoria }) => {
   );
 };
 
-export default Contenido;

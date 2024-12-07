@@ -17,7 +17,7 @@
 }
 
 .contenidoContainer span {
-    color: #20ACB8;
+    color: rgb(32, 172, 184);
 }
 
 @media (max-width: 1080px) {

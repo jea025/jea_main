@@ -2,9 +2,14 @@ import Image from "next/image";
 import "./Noticia.css";
 import img from "../../public/contenido.jpg"
 
-//se usan los props para mostrar datos de un objeto
-//se usa el link de react router para ir a una nueva ruta
-const Noticia = ({ titulo, descripcion, imgUrl, masUrl, categoria }) => {
+interface propsNoticia{
+  titulo: string;
+  descripcion: string; 
+  imgUrl: string; 
+  categoria: string;
+}
+
+export default function Noticia ({ titulo, descripcion, imgUrl, categoria }: propsNoticia) {
   return (
     <div className="noticiaContainer">
       <div className="noticiaInfo">
@@ -13,11 +18,10 @@ const Noticia = ({ titulo, descripcion, imgUrl, masUrl, categoria }) => {
           <h4>{categoria}</h4>
           <p>{descripcion}</p>
         </div>
-        <h1>{masUrl}</h1>
+        {imgUrl}
       </div>
       <Image src={img} width={650} height={300} alt="noticia" />
     </div>
   );
 };
 
-export default Noticia;
