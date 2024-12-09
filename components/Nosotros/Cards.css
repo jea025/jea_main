@@ -1,80 +1,3 @@
-.primerTexto {
-    padding: 0 3%;
-    font-size: 1.2rem;
-    margin-top: 50px;
-    margin-bottom: 50px;
-}
-
-.gNosotros {
-    width: 100%;
-    height: 350px;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    gap: 40px;
-}
-
-.box {
-    display: flex;
-    flex-direction: column;
-    width: 45%;
-}
-
-.textoSecundario {
-    font-size: 1.1rem;
-}
-
-.textoImgBackground {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 550px;
-    background-image: url("../../public/radio.png");
-    background-repeat: no-repeat;
-    background-size: cover; 
-    background-attachment: fixed;
-    background-position: center;
-}
-
-.textoImgBackground h2 {
-    text-align: center;
-    user-select: none;
-    font-size: 2.3rem;
-    color: #2EC2CE;
-}
-
-.textoImgBackground h3 {
-    text-align: center;
-    user-select: none;
-    font-size: 1.5rem;
-    color: #ffffff;
-    width: 70%;
-}
-
-hr {
-    width: 95%;
-    align-self: center;
-}
-
-.lista-simbolo {
-    list-style-type: none; 
-    padding-left: 0;
-}
-
-.lista-simbolo li::before {
-    content: "✔"; 
-    color: green; 
-    font-weight: bold; 
-    display: inline-block; 
-    width: 1.5em;
-    margin-right: 0.5em; 
-}
 
 .flip-card {
     background-color: transparent;
@@ -124,7 +47,7 @@ hr {
 }
 
 .flip-card-back {
-    background-color: #20acb8;
+    background-color: rgb(32, 172, 184);
     color: white;
     transform: rotateY(180deg);
     padding: 10px;
@@ -176,33 +99,6 @@ hr {
         width: 340px;
         height: 360px;
     }
-
-    .primerTexto {
-        font-size: 1rem;
-    }
-
-    .textoImgBackground {
-        height: 400px;
-    }
-
-    .textoImgBackground h2 {
-        margin: 0;
-        font-size: 1.9rem;
-    }
-
-    .textoImgBackground h3 {
-        font-size: 1.3rem;
-        margin: 0;
-        margin-top: 20px;
-    }
-
-    .box h2 {
-        font-size: 1.3rem;
-    }
-
-    .textoSecundario {
-        font-size: 1rem;
-    }
 }
 
 @media (max-width: 770px) {
@@ -242,33 +138,6 @@ hr {
 }
 
 @media (max-width: 550px) {
-    .container {
-        flex-direction: column;
-    }
-
-    .box {
-        justify-content: center;
-        align-items: center;
-        width: 90%;
-        padding: 0 20px;
-        text-align: center;
-    }
-
-    .primerTexto {
-        text-align: center;
-    }
-
-    .textoImgBackground h2 {
-        font-size: 1.5rem;
-    }
-
-    .textoImgBackground h3 {
-        font-size: 1rem;
-    }
-
-    .nosotrosContainer {
-        overflow: hidden;
-    }
 }
 
 @media (max-width: 420px) {

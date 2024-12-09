@@ -16,7 +16,7 @@ export default function ContenidoMenu(): JSX.Element {
     "radio",
   ];
 
-  const [activeSectionHome, setActiveSectionHome] = useState<string>("");
+  const [activeSectionHome, setActiveSectionHome] = useState<string>("general");
 
   return (
     <div className="h-auto flex flex-col items-center justify-center mt-3 pt-24">

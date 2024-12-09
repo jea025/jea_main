@@ -6,35 +6,29 @@ import logo from "../../public/logo.png";
 import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
-  const pathname = usePathname(); 
+  const pathname = usePathname();
   const activeClass = "border-l-2 border-white text-white font-bold";
   const defaultClass = "text-white hover:text-gray-300";
 
   return (
     <div className="w-full h-16">
-      <nav className="w-full bg-customCyan flex justify-between items-center">
-        <Image className="w-28 ml-8" src={logo} alt="logo" />
+      <nav className="w-full bg-customCyan flex justify-between items-center fixed 
+      z-10">
+        <Link href={'/home'} id="home">
+          <Image className="w-28 ml-8" src={logo} alt="logo" />
+        </Link>
         <div className="h-16 flex items-center w-full justify-end mr-14">
-          <Link href={"/home"}>
+          <Link href={"/noticias"}>
             <button
-              id="home"
+              id="noticias"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/home" ? activeClass : defaultClass
+                pathname === "/noticias" ? activeClass : defaultClass
               }`}
             >
-              HOME
+              NOTICIAS
             </button>
           </Link>
-          <Link href={"/nosotros"}>
-            <button
-              id="nosotros"
-              className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/nosotros" ? activeClass : defaultClass
-              }`}
-            >
-              NOSOTROS
-            </button>
-          </Link>
+       
           <Link href={"/contacto"}>
             <button
               id="contacto"
