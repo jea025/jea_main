@@ -1,7 +1,6 @@
 import Image from "next/image";
-import "./Noticia.css";
 import img from "../../public/contenido.jpg";
-import Link from "next/link";
+import React, { useState } from "react";
 
 interface propsNoticia {
   titulo: string;
@@ -13,22 +12,35 @@ interface propsNoticia {
 export default function Noticia({
   titulo,
   descripcion,
-  //imgUrl, TODO: habilitar cuando tenga las imagenes en el bucket
+  // imgUrl, TODO: habilitar cuando tenga las imágenes en el bucket
   categoria,
 }: propsNoticia) {
+  const [verCompleto, setVerCompleto] = useState(false);
+
   return (
-    <div className="noticiaContainer">
-      <div className="noticiaInfo">
-        <div>
-          <h3>{titulo}</h3>
-          <h4>{categoria}</h4>
-          <p>{descripcion}</p>
-        </div>
-        <Link href={`/novedades/${titulo.replaceAll(" ", "-")}`}>
-          <h4 className="text-customCyan underline text-sm">Ver noticia completa</h4>
-        </Link>
-      </div>
-      <Image src={img} width={650} height={300} alt="noticia" />
+    <div className="flex flex-col gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 w-full max-w-md mx-auto">
+      <Image
+        src={img}
+        alt="noticia"
+        width={300}
+        height={200}
+        className="rounded-lg object-cover mx-auto"
+      />
+      <h3 className="text-lg font-bold text-gray-800">{titulo}</h3>
+      <h4 className="text-sm text-gray-500">{categoria}</h4>
+      <p className="text-sm text-gray-700 leading-relaxed">
+        {verCompleto
+          ? descripcion
+          : descripcion.length > 150
+          ? `${descripcion.slice(0, 150)}...`
+          : descripcion}
+      </p>
+      <button
+        onClick={() => setVerCompleto(!verCompleto)}
+        className="self-start text-customCyan text-sm underline hover:text-teal-600"
+      >
+        {verCompleto ? "Mostrar menos" : "Ver noticia completa"}
+      </button>
     </div>
   );
 }

@@ -15,7 +15,7 @@ export default function ContenidoMenu(): JSX.Element {
   ];
 
   return (
-    <div className="h-auto flex flex-col items-center justify-center mt-3 pt-12">
+    <div className="h-auto flex flex-col items-center justify-center">
       <Contenido />
       <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>
       <div className="flex flex-wrap gap-14 w-full justify-center items-center mb-10">

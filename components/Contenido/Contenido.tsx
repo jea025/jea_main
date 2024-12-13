@@ -48,48 +48,54 @@ export default function PaginationNews() {
   };
 
   return (
-    <div className="w-5/6 h-auto mb-24 flex flex-col justify-center gap-10">
-      <h2 className="text-4xl select-none">
-        <span className="text-customCyan">|</span>
-        Noticias recientes
-      </h2>
-      <ul className="bg-customCyam flex flex-col gap-6 w-full items-center justify-center" >
-        {news.map((newsItem) => (
-            <Noticia
-              key={newsItem.title}
-              titulo={newsItem.title}
-              descripcion={newsItem.body}
-              imgUrl={newsItem.image}
-              categoria={newsItem.author}
-            />
-        ))}
-      </ul>
+    <div className="relative w-full bg-cover bg-center bg-fixed min-h-screen bg-vision">
+      <div className="bg-cyan-50 bg-opacity-95 w-full h-full absolute top-0 left-0"></div>
 
-      <div className="items-center justify-center flex">
-        <Pagination className="bg-gray-800 shadow-lg rounded-lg">
-          <Pagination.Prev
-            disabled={pageActual === 0}
-            onClick={() => changePage(pageActual - 1)}
-          >
-            Anterior
-          </Pagination.Prev>
-          {Array.from({ length: totalPages }, (_, index) => (
-            <Pagination.Item
-              key={index}
-              active={index === pageActual}
-              onClick={() => changePage(index)}
-              className="text-customCyan bg-slate-400"
-            >
-              {index + 1}
-            </Pagination.Item>
+      <div className="relative z-1 p-8">
+        <h2 className="text-4xl select-none text-black mb-6">
+          <span className="text-customCyan">| </span>
+          Noticias recientes
+        </h2>
+        {/* Grilla de noticias */}
+        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+          {news.map((newsItem) => (
+            <li key={newsItem.title} className="flex justify-center">
+              <Noticia
+                titulo={newsItem.title}
+                descripcion={newsItem.body}
+                imgUrl={newsItem.image}
+                categoria={newsItem.author}
+              />
+            </li>
           ))}
-          <Pagination.Next
-            disabled={pageActual === totalPages - 1}
-            onClick={() => changePage(pageActual + 1)}
-          >
-            Siguiente
-          </Pagination.Next>
-        </Pagination>
+        </ul>
+
+        <div className="items-center justify-center flex">
+          <Pagination className="bg-gray-800 shadow-lg rounded-lg">
+            <Pagination.Prev
+              disabled={pageActual === 0}
+              onClick={() => changePage(pageActual - 1)}
+            >
+              Anterior
+            </Pagination.Prev>
+            {Array.from({ length: totalPages }, (_, index) => (
+              <Pagination.Item
+                key={index}
+                active={index === pageActual}
+                onClick={() => changePage(index)}
+                className="text-customCyan bg-slate-400"
+              >
+                {index + 1}
+              </Pagination.Item>
+            ))}
+            <Pagination.Next
+              disabled={pageActual === totalPages - 1}
+              onClick={() => changePage(pageActual + 1)}
+            >
+              Siguiente
+            </Pagination.Next>
+          </Pagination>
+        </div>
       </div>
     </div>
   );
