@@ -1,6 +1,7 @@
 import Image from "next/image";
 import img from "../../public/contenido.jpg";
 import React, { useState } from "react";
+import Link from "next/link";
 
 interface propsNoticia {
   titulo: string;
@@ -39,8 +40,14 @@ export default function Noticia({
         onClick={() => setVerCompleto(!verCompleto)}
         className="self-start text-customCyan text-sm underline hover:text-teal-600"
       >
-        {verCompleto ? "Mostrar menos" : "Ver noticia completa"}
+        {verCompleto ? "Mostrar menos" : "Ver mas"}
       </button>
+      <Link href={`/news/${titulo.replaceAll(" ", "-")}`}>
+        <button
+          className="self-start text-customCyan text-sm underline hover:text-teal-600"
+        >Vista completa
+        </button>
+      </Link>
     </div>
   );
 }
