@@ -27,7 +27,7 @@ export default function Noticia({
         height={200}
         className="rounded-lg object-cover mx-auto"
       />
-      <h3 className="text-lg font-bold text-gray-800">{titulo}</h3>
+      <h3 className="text-lg font-bold text-gray-800"><span className="text-customCyan">| </span>{titulo}</h3>
       <h4 className="text-sm text-gray-500">{categoria}</h4>
       <p className="text-sm text-gray-700 leading-relaxed">
         {verCompleto
