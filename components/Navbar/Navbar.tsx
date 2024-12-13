@@ -13,19 +13,29 @@ const Navbar: React.FC = () => {
   return (
     <div className="w-full h-16">
       <nav className="w-full bg-customCyan flex justify-between items-center fixed 
-      z-10">
-        <Link href={'/home'} id="home">
-          <Image className="w-28 ml-8" src={logo} alt="logo" />
+      z-10 border-b-2 border-cyan-800">
+        <Link href={'/inicio'} id="home">
+          <Image className="w-wxl ml-16" src={logo} alt="logo" />
         </Link>
         <div className="h-16 flex items-center w-full justify-end mr-14">
-          <Link href={"/noticias"}>
+        <Link href={"/inicio"}>
             <button
-              id="noticias"
+              id="inicio"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/noticias" ? activeClass : defaultClass
+                pathname === "/inicio" ? activeClass : defaultClass
               }`}
             >
-              NOTICIAS
+              INICIO
+            </button>
+          </Link>
+          <Link href={"/novedades"}>
+            <button
+              id="novedades"
+              className={`h-8 px-1 py-2 mx-4 my-1 ${
+                pathname === "/novedades" ? activeClass : defaultClass
+              }`}
+            >
+              NOVEDADES
             </button>
           </Link>
        

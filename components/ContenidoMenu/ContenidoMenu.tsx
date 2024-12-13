@@ -19,8 +19,10 @@ export default function ContenidoMenu(): JSX.Element {
   const [activeSectionHome, setActiveSectionHome] = useState<string>("general");
 
   return (
-    <div className="h-auto flex flex-col items-center justify-center mt-3 pt-24">
-      <div className="flex flex-wrap gap-14 justify-center items-center">
+    <div className="h-auto flex flex-col items-center justify-center mt-3 pt-12">
+      {activeSectionHome && <Contenido />}
+      <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>
+      <div className="flex flex-wrap gap-14 w-full justify-center items-center mb-10">
         {secciones.map((seccion) => (
           <div
             key={seccion}
@@ -31,8 +33,6 @@ export default function ContenidoMenu(): JSX.Element {
           </div>
         ))}
       </div>
-      <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>
-      {activeSectionHome && <Contenido categoria={activeSectionHome} />}
     </div>
   );
 }

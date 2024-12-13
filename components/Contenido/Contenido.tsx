@@ -1,87 +1,97 @@
 "use client";
-
+import { allNewsPage } from "@/app/service/newsService";
+import React, { useState, useEffect } from "react";
 import Noticia from "../Noticia/Noticia";
-import contenido from "./contenido.json";
-import NoticiasVacias from "../NoticiasVacias/NoticiasVacias";
-import Spinner from "../Spinner/Spinner";
-import React, { useState, useEffect } from "react"; //hooks
+import { Pagination } from "react-bootstrap";
 
-
-/*
-    1-se usa el esado loading para mostrar que carga hasta q llega la informacion(fetch)
-    2-se usa el estado arrCategoria para meter en un array todas las noticias de la categoria ingresada como parametro(props)
-    3-se usa el hook useEffect para renderizar la noticia solo si primero tengo la informacion disponible
-    4- 
-*/
-
-interface propsCategoria{
-  categoria: string;
+interface News {
+  id?: string;
+  title: string;
+  body: string;
+  image: string;
+  author: string;
 }
 
-export default function Contenido({categoria}: propsCategoria ){
-  const [loading, setLoading] = useState(true);
-  const [arrCategoria, setArrCategoria] = useState([]);
+interface NewsResponse {
+  news: News[];
+  pageActual: number;
+  totalPages: number;
+  totalItems: number;
+}
 
-  const cantNoticias = 10; //se muestran 10 en la seccion general(maximo)
-  const arrContenido = contenido.contenidoJSON;
+export default function PaginationNoticias() {
+  const [news, setNews] = useState<News[]>([]);
+  const [pageActual, setpageActual] = useState<number>(0);
+  const [totalPages, settotalPages] = useState<number>(0);
+  const tamanoPage = 10;
 
   useEffect(() => {
-    // Simular la carga de datos
-    const fetchData = () => {
-      const dataFiltrada = arrContenido
-        .filter(
-          (noticia) =>
-            categoria === "general" || categoria === noticia.categoria
-        ) //filtra array segun categoria
-        .map(
-          (
-            noticia //recorre el array y renderiza un componente segun la informacion de la posicion del array
-          ) => (
-            <Noticia
-              key={noticia.id}
-              titulo={noticia.titulo}
-              descripcion={noticia.descripcion}
-              imgUrl={noticia.imgUrl}
-              categoria={noticia.categoria}
-            />
-          )
-        );
-
-      if (categoria === "general" && dataFiltrada.length > cantNoticias) {
-        const cantPorReducir = dataFiltrada.length - cantNoticias;
-        for (let i = 0; i < cantPorReducir; i++) {
-          const randomNumber = Math.floor(Math.random() * dataFiltrada.length);
-          dataFiltrada.splice(randomNumber, 1);
-        } //se acortan las noticias generales, que ademas son aleatorias. cuando esta en la seccion general
+    const loadNews = async () => {
+      try {
+        const data: NewsResponse = await allNewsPage(pageActual, tamanoPage);
+        console.log(data);
+        setNews(data.news);
+        setpageActual(data.pageActual);
+        settotalPages(data.totalPages);
+      } catch (error) {
+        console.error("Error al cargar noticias:", error);
       }
-
-      // BORRAR ===============================================
-      setTimeout(() => {
-        //se usa para relentizar 0,5 segundos cuando va a mostrar la noticia simulando la llegada de informacion a traves de la base de datos
-        setArrCategoria(dataFiltrada);
-        setLoading(false);
-      }, 500);
-      // BORRAR ===============================================
     };
 
-    fetchData();
-  }, [arrContenido, categoria]);
+    loadNews();
+  }, [pageActual]);
+
+  const changuePage = (newPage: number) => {
+    if (newPage >= 0 && newPage < totalPages) {
+      setpageActual(newPage);
+    }
+  };
 
   return (
-    //se usa el ternario para que cuando loading sea true se renderize el spinner y si no, que se renderize la noticia correspondiente
-    //si la noticia esta vacia se renderiza el componente q avisa q no hya noticia
     <div className="w-5/6 h-auto mb-24 flex flex-col justify-center gap-10">
-      <h2 className="uppercase text-4xl select-none">
-        <span className="text-customCyan2">|</span> {categoria}
+      <h2 className="text-4xl select-none">
+        <span className="text-customCyan">|</span>
+          Noticias recientes
       </h2>
-      {loading ? (
-        <Spinner />
-      ) : arrCategoria.length > 0 ? (
-        arrCategoria
-      ) : (
-        <NoticiasVacias />
-      )}
+      <ul className="bg-customCyam flex flex-col gap-6 w-full items-center justify-center">
+        {news.map((newsItem) => (
+          <Noticia
+            key={newsItem.id}
+            titulo={newsItem.title}
+            descripcion={newsItem.body}
+            imgUrl={newsItem.image}
+            categoria={newsItem.author}
+          />
+        ))}
+      </ul>
+
+      <div className="items-center justify-center flex">
+      <Pagination className="bg-gray-800 shadow-lg rounded-lg">
+          <Pagination.Prev
+            disabled={pageActual === 0}
+            onClick={() => changuePage(pageActual - 1)}
+          >
+            Anterior
+          </Pagination.Prev>
+          {Array.from({ length: totalPages }, (_, index) => (
+            <Pagination.Item
+              key={index}
+              active={index === pageActual}
+              onClick={() => changuePage(index)}
+              className="text-customCyan bg-slate-400"
+            >
+              {index + 1}
+            </Pagination.Item>
+          ))}
+          <Pagination.Next
+            disabled={pageActual === totalPages - 1}
+            onClick={() => changuePage(pageActual + 1)}
+          >
+            Siguiente
+          </Pagination.Next>
+        </Pagination>
+
+      </div>
     </div>
   );
-};
-
+}

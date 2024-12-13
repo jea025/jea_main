@@ -1,4 +1,3 @@
-import "./Carrusel.css";
 import Image, { StaticImageData } from "next/image";
 
 interface propsCarrousel {

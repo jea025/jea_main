@@ -29,10 +29,13 @@ export default {
       },
       height: {
         'size': "550px",
-        '600': "600px"
+        '600': "600px",
+        'quarter': '25%',
+        
       },
       width: {
         '400': "400px",
+        'wxl': "7.5rem",
       },
       perspective: {
         '1000': '1000px',

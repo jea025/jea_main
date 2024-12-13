@@ -92,6 +92,7 @@ export default function Nosotros() {
           </p>
         </div>
       </div>
+      <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>
       <Cards />
     </div>
   );
