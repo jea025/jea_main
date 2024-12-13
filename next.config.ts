@@ -5,8 +5,8 @@ const nextConfig: NextConfig = {
   async redirects() {
     return [
       {
-        source: '/home',
-        destination: '/inicio',
+        source: '/inicio',
+        destination: '/home',
         permanent: true, // Usa true para redirección 301 o false para 302
       },
     ];

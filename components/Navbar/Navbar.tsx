@@ -14,56 +14,56 @@ const Navbar: React.FC = () => {
     <div className="w-full h-16">
       <nav className="w-full bg-customCyan flex justify-between items-center fixed 
       z-10 border-b-2 border-cyan-800">
-        <Link href={'/inicio'} id="home">
+        <Link href={'/home'} id="home">
           <Image className="w-wxl ml-16" src={logo} alt="logo" />
         </Link>
         <div className="h-16 flex items-center w-full justify-end mr-14">
-        <Link href={"/inicio"}>
+        <Link href={"/home"}>
             <button
               id="inicio"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/inicio" ? activeClass : defaultClass
+                pathname === "/home" ? activeClass : defaultClass
               }`}
             >
               INICIO
             </button>
           </Link>
-          <Link href={"/novedades"}>
+          <Link href={"/news"}>
             <button
               id="novedades"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/novedades" ? activeClass : defaultClass
+                pathname === "/news" ? activeClass : defaultClass
               }`}
             >
               NOVEDADES
             </button>
           </Link>
        
-          <Link href={"/contacto"}>
+          <Link href={"/contact"}>
             <button
               id="contacto"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/contacto" ? activeClass : defaultClass
+                pathname === "/contact" ? activeClass : defaultClass
               }`}
             >
               CONTACTO
             </button>
           </Link>
-          <Link href={"/prensa"}>
+          <Link href={"/journalism"}>
             <button
               id="prensa"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/prensa" ? activeClass : defaultClass
+                pathname === "/journalism" ? activeClass : defaultClass
               }`}
             >
               PRENSA
             </button>
           </Link>
-          <Link href={"/enlaces"}>
+          <Link href={"/links"}>
             <button
               id="enlaces"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/enlaces" ? activeClass : defaultClass
+                pathname === "/links" ? activeClass : defaultClass
               }`}
             >
               ENLACES

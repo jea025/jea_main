@@ -4,7 +4,7 @@ import React, { useState, useEffect } from "react";
 import Noticia from "../Noticia/Noticia";
 import { Pagination } from "react-bootstrap";
 
-interface News {
+export interface News {
   id?: string;
   title: string;
   body: string;
@@ -19,7 +19,7 @@ interface NewsResponse {
   totalItems: number;
 }
 
-export default function PaginationNoticias() {
+export default function PaginationNews() {
   const [news, setNews] = useState<News[]>([]);
   const [pageActual, setpageActual] = useState<number>(0);
   const [totalPages, settotalPages] = useState<number>(0);
@@ -41,7 +41,7 @@ export default function PaginationNoticias() {
     loadNews();
   }, [pageActual]);
 
-  const changuePage = (newPage: number) => {
+  const changePage = (newPage: number) => {
     if (newPage >= 0 && newPage < totalPages) {
       setpageActual(newPage);
     }
@@ -51,25 +51,25 @@ export default function PaginationNoticias() {
     <div className="w-5/6 h-auto mb-24 flex flex-col justify-center gap-10">
       <h2 className="text-4xl select-none">
         <span className="text-customCyan">|</span>
-          Noticias recientes
+        Noticias recientes
       </h2>
-      <ul className="bg-customCyam flex flex-col gap-6 w-full items-center justify-center">
+      <ul className="bg-customCyam flex flex-col gap-6 w-full items-center justify-center" >
         {news.map((newsItem) => (
-          <Noticia
-            key={newsItem.id}
-            titulo={newsItem.title}
-            descripcion={newsItem.body}
-            imgUrl={newsItem.image}
-            categoria={newsItem.author}
-          />
+            <Noticia
+              key={newsItem.title}
+              titulo={newsItem.title}
+              descripcion={newsItem.body}
+              imgUrl={newsItem.image}
+              categoria={newsItem.author}
+            />
         ))}
       </ul>
 
       <div className="items-center justify-center flex">
-      <Pagination className="bg-gray-800 shadow-lg rounded-lg">
+        <Pagination className="bg-gray-800 shadow-lg rounded-lg">
           <Pagination.Prev
             disabled={pageActual === 0}
-            onClick={() => changuePage(pageActual - 1)}
+            onClick={() => changePage(pageActual - 1)}
           >
             Anterior
           </Pagination.Prev>
@@ -77,7 +77,7 @@ export default function PaginationNoticias() {
             <Pagination.Item
               key={index}
               active={index === pageActual}
-              onClick={() => changuePage(index)}
+              onClick={() => changePage(index)}
               className="text-customCyan bg-slate-400"
             >
               {index + 1}
@@ -85,12 +85,11 @@ export default function PaginationNoticias() {
           ))}
           <Pagination.Next
             disabled={pageActual === totalPages - 1}
-            onClick={() => changuePage(pageActual + 1)}
+            onClick={() => changePage(pageActual + 1)}
           >
             Siguiente
           </Pagination.Next>
         </Pagination>
-
       </div>
     </div>
   );
