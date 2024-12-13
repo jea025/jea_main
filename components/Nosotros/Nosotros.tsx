@@ -5,10 +5,10 @@ export default function Nosotros() {
     <div className="w-full h-auto">
       <div className="mt-8 mb-8 p-4">
         <h2 className="mt-8 mb-8">
-          <span className="text-customCyan2">|</span> ¿Qué es jóvenes en Acción?
+          <span className="text-customCyan2">|</span> Acerca de nosotros
         </h2>
         <p className="text-xl">
-          Jóvenes en Acción” nació en 1997 como un programa de radio, a partir
+          Jóvenes en Acción nació en 1997 como un programa de radio, a partir
           de la idea de lograr un espacio destinado reflejar el sentir y pensar
           de los jóvenes, presentando temas de interés e información clara en
           respuesta a sus inquietudes e interrogantes. Nuestra misión consiste

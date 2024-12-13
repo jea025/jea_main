@@ -59,16 +59,7 @@ const Navbar: React.FC = () => {
               PRENSA
             </button>
           </Link>
-          <Link href={"/links"}>
-            <button
-              id="enlaces"
-              className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/links" ? activeClass : defaultClass
-              }`}
-            >
-              ENLACES
-            </button>
-          </Link>
+       
         </div>
       </nav>
     </div>
