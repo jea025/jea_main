@@ -83,8 +83,8 @@ export default function PaginationNews() {
           ))}
         </ul>
 
-        <div className="items-center justify-center flex">
-          <Pagination className="bg-gray-800 shadow-lg rounded-lg">
+        <div className="items-center justify-center flex mt-20">
+          <Pagination>
             <Pagination.Prev
               disabled={pageActual === 0}
               onClick={() => changePage(pageActual - 1)}
@@ -96,7 +96,6 @@ export default function PaginationNews() {
                 key={index}
                 active={index === pageActual}
                 onClick={() => changePage(index)}
-                className="text-customCyan bg-slate-400"
               >
                 {index + 1}
               </Pagination.Item>

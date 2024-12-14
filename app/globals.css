@@ -19,3 +19,11 @@ body {
   background: var(--background);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.pagination .page-link {
+  @apply bg-gray-50 text-customCyan3 rounded-lg;
+}
+
+.pagination .active>.page-link,.page-link.active  {
+  @apply bg-customCyan;
+}
