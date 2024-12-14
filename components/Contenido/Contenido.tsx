@@ -3,6 +3,7 @@ import { allNewsPage } from "@/app/service/newsService";
 import React, { useState, useEffect } from "react";
 import Noticia from "../Noticia/Noticia";
 import { Pagination } from "react-bootstrap";
+import { useRouter, useSearchParams } from "next/navigation";
 
 export interface News {
   id?: string;
@@ -20,16 +21,27 @@ interface NewsResponse {
 }
 
 export default function PaginationNews() {
+  const searchParams = useSearchParams();
+  const router = useRouter();
+  const [currentPage, setCurrentPage] = useState<number>(0);
+
   const [news, setNews] = useState<News[]>([]);
-  const [pageActual, setpageActual] = useState<number>(0);
+  const [pageActual, setpageActual] = useState<number>(currentPage);
   const [totalPages, settotalPages] = useState<number>(0);
   const tamanoPage = 10;
 
   useEffect(() => {
+    // Obtiene el valor de "page" y actualiza el estado
+    const page = searchParams.get("page");
+    if (page && !isNaN(Number(page))) {
+      setCurrentPage(Number(page));
+    }
+  }, [searchParams]);
+  
+  useEffect(() => {
     const loadNews = async () => {
       try {
         const data: NewsResponse = await allNewsPage(pageActual, tamanoPage);
-        console.log(data);
         setNews(data.news);
         setpageActual(data.pageActual);
         settotalPages(data.totalPages);
@@ -44,6 +56,7 @@ export default function PaginationNews() {
   const changePage = (newPage: number) => {
     if (newPage >= 0 && newPage < totalPages) {
       setpageActual(newPage);
+      router.push(`/news?page=${newPage + 1}`);
     }
   };
 

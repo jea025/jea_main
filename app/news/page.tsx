@@ -1,3 +1,4 @@
+
 import ContenidoMenu from "@/components/ContenidoMenu/ContenidoMenu";
 
 export default function NovedadesPage() {
