@@ -1,18 +1,20 @@
-import { getNewsByTitle } from "@/app/service/newsService";
+import { getNewsByUUID } from "@/app/service/newsService";
 import Image from "next/image";
 import Link from "next/link";
 import img from "../../../public/contenido.jpg";
 
 interface EditNewsPageProps {
   params: {
-    title: string;
+    uuid: string;
   };
 }
 
 export default async function NewsSelected({ params }: EditNewsPageProps) {
-  const { title } = await params;
-  const decodedTitle = decodeURIComponent(title);
-  const newsData = await getNewsByTitle(decodedTitle);
+  const { uuid } = params;
+console.log(params.uuid, " params")
+  console.log(uuid, "newsSelected")
+  const newsData = await getNewsByUUID(uuid);
+ 
   if (!newsData) {
     return <div>No se encontró la noticia.</div>;
   }

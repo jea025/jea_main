@@ -8,11 +8,13 @@ export const allNewsPage = async (page: number, size: number) => {
     return respuesta.data;
 };
 
-export const getNewsByTitle = async (request: string): Promise<News> => {
+export const getNewsByUUID = async (request: string): Promise<News> => {
     try {
-      const response = await axiosClient.get<News>(`/news/title`, {
+      console.log(request, "request xd")
+      const response = await axiosClient.get<News>(`/news/uuid`, {
         params: { request }, // Agrega el parámetro de consulta 'title'
       });
+      console.log(response.data)
       return response.data; // Ajusta según la estructura de tu respuesta
     } catch (err) {
       console.error(

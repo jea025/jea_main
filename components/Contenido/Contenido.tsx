@@ -6,7 +6,7 @@ import { Pagination } from "react-bootstrap";
 import { useRouter, useSearchParams } from "next/navigation";
 
 export interface News {
-  id?: string;
+  uuid: string;
   title: string;
   body: string;
   image: string;
@@ -43,6 +43,7 @@ export default function PaginationNews() {
       try {
         const data: NewsResponse = await allNewsPage(pageActual, tamanoPage);
         setNews(data.news);
+        console.log(data.news)
         setpageActual(data.pageActual);
         settotalPages(data.totalPages);
       } catch (error) {
@@ -72,8 +73,9 @@ export default function PaginationNews() {
         {/* Grilla de noticias */}
         <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
           {news.map((newsItem) => (
-            <li key={newsItem.title} className="flex justify-center">
+            <li key={newsItem.uuid} className="flex justify-center">
               <Noticia
+                uuid={newsItem.uuid}
                 titulo={newsItem.title}
                 descripcion={newsItem.body}
                 imgUrl={newsItem.image}

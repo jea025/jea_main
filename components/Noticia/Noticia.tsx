@@ -6,6 +6,7 @@ import React, { useState } from "react";
 import Link from "next/link";
 
 interface propsNoticia {
+  uuid: string;
   titulo: string;
   descripcion: string;
   imgUrl: string;
@@ -15,10 +16,12 @@ interface propsNoticia {
 const mockImages = [img1, img2, img3];
 
 export default function Noticia({
+  uuid,
   titulo,
   descripcion,
   // imgUrl, TODO: habilitar cuando tenga las imágenes en el bucket
   categoria,
+ 
 }: propsNoticia) {
   const [verCompleto, setVerCompleto] = useState(false);
 
@@ -26,6 +29,7 @@ export default function Noticia({
     const randomIndex = Math.floor(Math.random() * mockImages.length);
     return mockImages[randomIndex];
   };
+  console.log(uuid, "desde el back")
   const randomImage = getRandomImage(); 
   return (
     <div className="flex flex-col gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 w-full max-w-md mx-auto">
@@ -51,7 +55,7 @@ export default function Noticia({
       >
         {verCompleto ? "Mostrar menos" : "Ver mas"}
       </button>
-      <Link href={`/news/${titulo.replaceAll(" ", "-")}`}>
+      <Link href={`/news/${uuid}`}>
         <button
           className="self-start text-customCyan text-sm underline hover:text-teal-600"
         >Vista completa
