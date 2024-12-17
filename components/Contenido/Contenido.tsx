@@ -28,7 +28,7 @@ export default function PaginationNews() {
   const [news, setNews] = useState<News[]>([]);
   const [pageActual, setpageActual] = useState<number>(currentPage);
   const [totalPages, settotalPages] = useState<number>(0);
-  const tamanoPage = 10;
+  const tamanoPage = 8;
 
   useEffect(() => {
     // Obtiene el valor de "page" y actualiza el estado
@@ -70,7 +70,7 @@ export default function PaginationNews() {
           Noticias recientes
         </h2>
         {/* Grilla de noticias */}
-        <ul className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full">
+        <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
           {news.map((newsItem) => (
             <li key={newsItem.title} className="flex justify-center">
               <Noticia

@@ -1,5 +1,7 @@
 import Image from "next/image";
-import img from "../../public/contenido.jpg";
+import img1 from "../../public/contenido.jpg";
+import img2 from "../../public/car1.png";
+import img3 from "../../public/AxionLogo.png";
 import React, { useState } from "react";
 import Link from "next/link";
 
@@ -10,6 +12,8 @@ interface propsNoticia {
   categoria: string;
 }
 
+const mockImages = [img1, img2, img3];
+
 export default function Noticia({
   titulo,
   descripcion,
@@ -18,10 +22,15 @@ export default function Noticia({
 }: propsNoticia) {
   const [verCompleto, setVerCompleto] = useState(false);
 
+  const getRandomImage = () => {
+    const randomIndex = Math.floor(Math.random() * mockImages.length);
+    return mockImages[randomIndex];
+  };
+  const randomImage = getRandomImage(); 
   return (
     <div className="flex flex-col gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 w-full max-w-md mx-auto">
       <Image
-        src={img}
+        src={randomImage}
         alt="noticia"
         width={300}
         height={200}
