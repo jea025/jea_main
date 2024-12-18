@@ -43,7 +43,6 @@ export default function PaginationNews() {
       try {
         const data: NewsResponse = await allNewsPage(pageActual, tamanoPage);
         setNews(data.news);
-        console.log(data.news)
         setpageActual(data.pageActual);
         settotalPages(data.totalPages);
       } catch (error) {

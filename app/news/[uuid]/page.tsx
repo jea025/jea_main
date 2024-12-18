@@ -11,10 +11,8 @@ interface EditNewsPageProps {
 
 export default async function NewsSelected({ params }: EditNewsPageProps) {
   const { uuid } = params;
-console.log(params.uuid, " params")
-  console.log(uuid, "newsSelected")
   const newsData = await getNewsByUUID(uuid);
- 
+
   if (!newsData) {
     return <div>No se encontró la noticia.</div>;
   }
@@ -22,7 +20,8 @@ console.log(params.uuid, " params")
     <div className=" min-h-screen bg-cover bg-center bg-cyan-700 flex p-6">
       <div className="bg-white p-8 rounded-lg shadow-lg max-w-full w-full">
         <h2 className="text-4xl font-bold mb-4 text-gray-700 text-start">
-        <span className="text-customCyan">| </span>{newsData.title}
+          <span className="text-customCyan">| </span>
+          {newsData.title}
         </h2>
         <h3 className="text-3xl font-medium mb-2 text-cyan-600 m-8">
           {newsData.author}

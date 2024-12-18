@@ -21,7 +21,6 @@ export default function Noticia({
   descripcion,
   // imgUrl, TODO: habilitar cuando tenga las imágenes en el bucket
   categoria,
- 
 }: propsNoticia) {
   const [verCompleto, setVerCompleto] = useState(false);
 
@@ -29,8 +28,7 @@ export default function Noticia({
     const randomIndex = Math.floor(Math.random() * mockImages.length);
     return mockImages[randomIndex];
   };
-  console.log(uuid, "desde el back")
-  const randomImage = getRandomImage(); 
+  const randomImage = getRandomImage();
   return (
     <div className="flex flex-col gap-4 p-4 bg-white rounded-lg shadow-md hover:shadow-lg transition-transform transform hover:-translate-y-1 w-full max-w-md mx-auto">
       <Image
@@ -40,7 +38,10 @@ export default function Noticia({
         height={200}
         className="rounded-lg object-cover mx-auto"
       />
-      <h3 className="text-lg font-bold text-gray-800"><span className="text-customCyan">| </span>{titulo}</h3>
+      <h3 className="text-lg font-bold text-gray-800">
+        <span className="text-customCyan">| </span>
+        {titulo}
+      </h3>
       <h4 className="text-sm text-gray-500">{categoria}</h4>
       <p className="text-sm text-gray-700 leading-relaxed">
         {verCompleto
@@ -56,9 +57,8 @@ export default function Noticia({
         {verCompleto ? "Mostrar menos" : "Ver mas"}
       </button>
       <Link href={`/news/${uuid}`}>
-        <button
-          className="self-start text-customCyan text-sm underline hover:text-teal-600"
-        >Vista completa
+        <button className="self-start text-customCyan text-sm underline hover:text-teal-600">
+          Vista completa
         </button>
       </Link>
     </div>
