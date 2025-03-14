@@ -8,9 +8,9 @@ export default function Nosotros() {
           <span className="text-customCyan2">|</span> Acerca de nosotros
         </h2>
         <p className="text-xl">
-          Jóvenes en Acción nació en 1997 como un programa de radio, a partir
-          de la idea de lograr un espacio destinado reflejar el sentir y pensar
-          de los jóvenes, presentando temas de interés e información clara en
+          Jóvenes en Acción nació en 1997 como un programa de radio, a partir de
+          la idea de lograr un espacio destinado reflejar el sentir y pensar de
+          los jóvenes, presentando temas de interés e información clara en
           respuesta a sus inquietudes e interrogantes. Nuestra misión consiste
           lograr brindarles un lugar de expresión y encuentro, de modo de
           sembrar una mayor conciencia y compromiso social en donde se pongan en
@@ -36,9 +36,12 @@ export default function Nosotros() {
         </h2>
         <h3 className="text-center select-none text-2xl text-white w-2/3">
           El programa Jovenes en Acción se emite por Radio Cultura F.M.97.9 Mhz,
-          los jueves de 20 a 21hs,durante el periodo : Abril-Diciembre o a
-          través de internet en 
-          <a href="https://www.fmradiocultura.com.ar" className="text-white"> www.fmradiocultura.com.ar</a>
+          los jueves de 20 a 21 h, durante el periodo:  Abril-Diciembre o a
+          través de internet en
+          <a href="https://www.fmradiocultura.com.ar" className="text-white">
+            {" "}
+            www.fmradiocultura.com.ar
+          </a>
         </h3>
       </div>
 
@@ -94,7 +97,6 @@ export default function Nosotros() {
           </p>
         </div>
       </div>
-    
     </div>
   );
 }

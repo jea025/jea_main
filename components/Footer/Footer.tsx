@@ -4,7 +4,7 @@ import Enlaces from "../Enlaces/Enlaces";
 
 export default function Footer() {
   return (
-    <div className="w-full h-1/3 flex flex-col bg-gradient-to-r from-cyan-900 to-customCyan ">
+    <div className="w-full h-1/3 flex flex-col bg-gradient-to-r from-cyan-700 to-customCyan ">
 
       <div className="w-full h-1 bg-white mt-2 mb-2 border-r-1"></div>
       <div className="w-full flex flex-row items-center justify-center ">

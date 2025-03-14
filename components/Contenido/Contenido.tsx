@@ -40,6 +40,7 @@ export default function PaginationNews() {
   
   useEffect(() => {
     const loadNews = async () => {
+      
       try {
         const data: NewsResponse = await allNewsPage(pageActual, tamanoPage);
         setNews(data.news);
@@ -62,23 +63,23 @@ export default function PaginationNews() {
 
   return (
     <div className="relative w-full bg-cover bg-center bg-fixed min-h-screen bg-vision">
-      <div className="bg-cyan-50 bg-opacity-95 w-full h-full absolute top-0 left-0"></div>
+      <div className="bg-cyan-50 bg-opacity-95 w-full h-full absolute"></div>
 
-      <div className="relative z-1 p-8">
-        <h2 className="text-4xl select-none text-black mb-6">
+      <div className="relative w-full h-full">
+        <h2 className="text-5xl select-none text-gray-700 m-4 font-bold">
           <span className="text-customCyan">| </span>
           Noticias recientes
         </h2>
         {/* Grilla de noticias */}
-        <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full">
+        <ul className="grid grid-cols-2 sm:grid-cols-2 lg:grid-cols-4 gap-2 w-full">
           {news.map((newsItem) => (
             <li key={newsItem.uuid} className="flex justify-center">
               <Noticia
                 uuid={newsItem.uuid}
                 titulo={newsItem.title}
                 descripcion={newsItem.body}
-                imgUrl={newsItem.image}
-                categoria={newsItem.author}
+                image={newsItem.image}
+                author={newsItem.author}
               />
             </li>
           ))}

@@ -1,8 +1,8 @@
 "use client";
 import "bootstrap/dist/css/bootstrap.min.css";
-import car1 from "../../public/car1.png";
-import car2 from "../../public/car2.png";
-import car3 from "../../public/car3.png";
+import car1 from "../../public/jea-fondo.jpg";
+import car2 from "../../public/micro.jpg";
+import car3 from "../../public/multicultura.jpg";
 import Carousel from "react-bootstrap/Carousel";
 import ExampleCarouselImage from "./ExampleCarouselImage";
 import { useState } from "react";
@@ -17,10 +17,10 @@ export default function ControlledCarousel() {
   return (
     <Carousel activeIndex={index} onSelect={handleSelect}>
       <Carousel.Item>
-        <ExampleCarouselImage img={car1} />
+        <ExampleCarouselImage img={car1}/>
         <Carousel.Caption>
           <p>Programa</p>
-          <h2>
+          <h2 className="">
             MULTIMEDIAL, EDUCATIVO
             <br /> Y SOCIAL
           </h2>
@@ -31,7 +31,7 @@ export default function ControlledCarousel() {
         <Carousel.Caption>
           <p>Radio en vivo</p>
           <h2>
-            Los jueves de 20 a 21 hs
+            Los jueves de 20 a 21 h
             <br />
             <a href="https://www.fmradiocultura.com.ar" className="text-white"> www.fmradiocultura.com.ar</a>
           </h2>

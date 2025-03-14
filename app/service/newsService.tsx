@@ -9,6 +9,7 @@ export const allNewsPage = async (page: number, size: number) => {
 };
 
 export const getNewsByUUID = async (request: string): Promise<News> => {
+  console.log(request, "request")
   try {
     const response = await axiosClient.get<News>(`/news/uuid`, {
       params: { request }, // Agrega el parámetro de consulta 'title'
