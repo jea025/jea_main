@@ -1,20 +1,19 @@
+
 import { getNewsByUUID } from "@/app/service/newsService";
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
-//import img from "../../../public/contenido.jpg";
 
-interface PageProps {
-  params: { uuid: string };
-}
+export default async function NewsSelected({ params }: { params?: Promise<{ uuid: string }> }) {
+  const resolvedParams = await params; // Esperamos la promesa
+  if (!resolvedParams) return <div>Error: No se encontró el parámetro UUID.</div>;
 
-export default async function NewsSelected({ params }: PageProps) {
-  const newsData = await getNewsByUUID( params.uuid);
+  const newsData = await getNewsByUUID(resolvedParams.uuid);
+  if (!newsData) return <div>No se encontró la noticia.</div>;
 
   if (!newsData) {
     return <div>No se encontró la noticia.</div>;
   }
-  
   return (
     <div className=" min-h-screen bg-cover bg-center flex p-1">
       <div className="bg-white p-2 rounded-lg shadow-lg max-w-full w-full">
