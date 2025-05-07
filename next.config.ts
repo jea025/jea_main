@@ -2,16 +2,22 @@ import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
   images: {
-    domains: ['storage.googleapis.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'storage.googleapis.com',
+        pathname: '/**',
+      },
+    ],
   },
   
-  /* config options here */
+
   async redirects() {
     return [
       {
         source: '/',
         destination: '/home',
-        permanent: true, // Usa true para redirección 301 o false para 302
+        permanent: true,
       },
       
     ];
