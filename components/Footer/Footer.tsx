@@ -1,5 +1,5 @@
-import Image from "next/image";
-import AxionLogo from "../../public/AxionLogo.png";
+//import Image from "next/image";
+//import AxionLogo from "../../public/AxionLogo.png";
 import Enlaces from "../Enlaces/Enlaces";
 
 export default function Footer() {
