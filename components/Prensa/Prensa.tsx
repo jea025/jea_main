@@ -79,7 +79,7 @@ export default function Prensa() {
           Fundación Andreani. Para que Jóvenes en acción se abra cada vez más
           necesitamos contar con el apoyo de empresas, ya que es muy difícil
           sostener el programa, reconoce Carmen. Para contactarse:
-          correodejovenes@yahoo.com.ar o 15-4401-8561.
+          correodejovenes@yahoo.com.ar
           <br />
           <br />
           El programa radial Jóvenes en acción cumplió diez años y sigue
