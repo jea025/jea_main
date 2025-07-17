@@ -8,26 +8,22 @@ export default function Nosotros() {
           <span className="text-customCyan2">|</span> Acerca de nosotros
         </h2>
         <p className="text-xl">
-          Jóvenes en Acción nació en 1997 como un programa de radio, a partir de
-          la idea de lograr un espacio destinado reflejar el sentir y pensar de
-          los jóvenes, presentando temas de interés e información clara en
-          respuesta a sus inquietudes e interrogantes. Nuestra misión consiste
-          lograr brindarles un lugar de expresión y encuentro, de modo de
-          sembrar una mayor conciencia y compromiso social en donde se pongan en
-          discusión los hechos de la realidad actual. Esta propuesta cumple ya
-          15 años de trayectoria, con la idea, producción y realización de la
+          Jóvenes en Acción nació en 1997 como un programa de radio (en Radio Cultura), para contar con un espacio destinado reflejar el sentir y pensar de
+          adolescentes (alumnos secundarios a cargo de la producción y conducción), sobre temas que les interesan y/o preocupan,
+          en la búsqueda de respuestas a sus inquietudes e interrogantes, dándoles voz, un espacio reflexivo en un medio de comunicación, facilitando el trabajo en equipo y el desarrollo de habilidades socioemocionales.
+          Desde el 2003, jóvenes mayores de 18 años también participan del programa,
+          algunos están en la facultad, otros quizás cursando el secundario, la universidad o egresaron, 
+          otros están trabajando o liderando proyectos sociales o emprendimientos productivos.
+          Nuestra misión consiste en brindarles un lugar de expresión y encuentro, de modo de
+          sembrar una mayor conciencia y compromiso social. Esta propuesta cumple ya
+          28 años de trayectoria, con la idea, producción y realización de la
           Lic. Carmen Sicardi quien pensó este proyecto al ver la necesidad de
           ofrecer una mirada optimista y esperanzadora sobre la juventud. Desde
-          sus inicios hasta la fecha más de 9.200 jóvenes participaron en la
-          producción integral del programa. Gran cantidad de estudiantes
+          sus inicios hasta la fecha más de 24.000 jóvenes participaron. Gran cantidad de estudiantes
           secundarios de colegios de Buenos Aires provenientes de escuelas
           públicas, privadas, de distintas confesiones religiosas y laicas
           hicieron posible reflejar las distintas realidades que viven los
-          chicos, superando las diferencias, creando un verdadero diálogo. Desde
-          el 2003, jóvenes mayores de 18 años también participan del programa,
-          algunos están en la facultad, otros quizás cursando el secundario en
-          una escuela nocturna, otros están trabajando o liderando proyectos
-          sociales o emprendimientos productivos.
+          chicos, superando las diferencias, creando un verdadero diálogo. 
         </p>
       </div>
       <div className="flex flex-col justify-center items-center h-size bg-no-repeat bg-cover bg-fixed bg-center bg-radio">
@@ -35,12 +31,13 @@ export default function Nosotros() {
           ¿Dónde puedo escuchar “Jóvenes en Acción”?
         </h2>
         <h3 className="text-center select-none text-2xl text-white w-2/3">
-          El programa Jovenes en Acción se emite por Radio Cultura F.M.97.9 Mhz,
-          los jueves de 20 a 21 h, durante el periodo:  Abril-Diciembre o a
+          El programa Jovenes en Acción se emite por Radio Cultura,
+          los jueves de 20 a 21 h, durante el periodo: Febrero-Diciembre o a
           través de internet en
           <a href="https://www.fmradiocultura.com.ar" className="text-white">
             {" "}
             www.fmradiocultura.com.ar
+            https://www.youtube.com/@radioculturaba/streams
           </a>
         </h3>
       </div>
