@@ -1,8 +1,8 @@
 "use client";
 import "bootstrap/dist/css/bootstrap.min.css";
-import car1 from "../../public/jea-fondo.jpg";
-import car2 from "../../public/micro.jpg";
-import car3 from "../../public/multicultura.jpg";
+import car1 from "../../public/car1.jpeg";
+import car2 from "../../public/car2.jpg";
+import car3 from "../../public/car3.jpeg";
 import Carousel from "react-bootstrap/Carousel";
 import ExampleCarouselImage from "./ExampleCarouselImage";
 import { useState } from "react";
