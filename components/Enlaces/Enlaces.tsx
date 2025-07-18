@@ -8,7 +8,7 @@ export default function Enlaces() {
       </h3>
       <div className="flex space-x-6">
         <a
-          href="https://facebook.com"
+          href="https://facebook.com/radio.jovenesenaccion"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Facebook"
@@ -16,15 +16,7 @@ export default function Enlaces() {
           <FaFacebook className="text-4xl text-white hover:text-cyan-200" />
         </a>
         <a
-          href="https://twitter.com"
-          target="_blank"
-          rel="noopener noreferrer"
-          aria-label="Twitter"
-        >
-          <FaTwitter className="text-4xl text-white hover:text-gray-100" />
-        </a>
-        <a
-          href="https://instagram.com"
+          href="https://instagram.com/jovenes.enaccion"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="Instagram"
@@ -32,7 +24,7 @@ export default function Enlaces() {
           <FaInstagram className="text-4xl text-white hover:text-gray-100" />
         </a>
         <a
-          href="https://youtube.com"
+          href="https://youtube.com/@jenaccionmultimedial"
           target="_blank"
           rel="noopener noreferrer"
           aria-label="YouTube"
