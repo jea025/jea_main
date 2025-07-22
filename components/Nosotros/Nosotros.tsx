@@ -8,22 +8,13 @@ export default function Nosotros() {
           <span className="text-customCyan2">|</span> Acerca de nosotros
         </h2>
         <p className="text-xl">
-          Jóvenes en Acción nació en 1997 como un programa de radio (en Radio Cultura), para contar con un espacio destinado reflejar el sentir y pensar de
-          adolescentes (alumnos secundarios a cargo de la producción y conducción), sobre temas que les interesan y/o preocupan,
-          en la búsqueda de respuestas a sus inquietudes e interrogantes, dándoles voz, un espacio reflexivo en un medio de comunicación, facilitando el trabajo en equipo y el desarrollo de habilidades socioemocionales.
-          Desde el 2003, jóvenes mayores de 18 años también participan del programa,
-          algunos están en la facultad, otros quizás cursando el secundario, la universidad o egresaron, 
-          otros están trabajando o liderando proyectos sociales o emprendimientos productivos.
-          Nuestra misión consiste en brindarles un lugar de expresión y encuentro, de modo de
-          sembrar una mayor conciencia y compromiso social. Esta propuesta cumple ya
-          28 años de trayectoria, con la idea, producción y realización de la
-          Lic. Carmen Sicardi quien pensó este proyecto al ver la necesidad de
-          ofrecer una mirada optimista y esperanzadora sobre la juventud. Desde
-          sus inicios hasta la fecha más de 24.000 jóvenes participaron. Gran cantidad de estudiantes
-          secundarios de colegios de Buenos Aires provenientes de escuelas
-          públicas, privadas, de distintas confesiones religiosas y laicas
-          hicieron posible reflejar las distintas realidades que viven los
-          chicos, superando las diferencias, creando un verdadero diálogo. 
+          Jóvenes en Acción nació en 1997 como un programa de radio (en Radio Cultura), para contar con un espacio destinado reflejar el sentir y pensar de adolescentes (alumnos secundarios a cargo de la producción y 
+          conducción), sobre temas que les interesan y/o preocupan, en la búsqueda de respuestas a sus inquietudes e interrogantes, dándoles voz, un espacio reflexivo en un medio de comunicación, facilitando el trabajo en 
+          equipo y el desarrollo de habilidades socioemocionales. Desde el 2003, jóvenes mayores de 18 años también participan del programa, algunos están en la facultad, otros quizás cursando el secundario, la universidad o 
+          egresaron, otros están trabajando o liderando proyectos sociales o emprendimientos productivos. Nuestra misión consiste en brindarles un lugar de expresión y encuentro, de modo de sembrar una mayor conciencia y 
+          compromiso social. Esta propuesta cumple ya 28 años de trayectoria, con la idea, producción y realización de la Lic. Carmen Sicardi quien pensó este proyecto al ver la necesidad de ofrecer una mirada optimista y 
+          esperanzadora sobre la juventud. Desde sus inicios hasta la fecha más de 24.000 jóvenes participaron. Gran cantidad de estudiantes secundarios de colegios de Buenos Aires provenientes de escuelas públicas, privadas, 
+          de distintas confesiones religiosas y laicas hicieron posible reflejar las distintas realidades que viven los chicos, superando las diferencias, creando un verdadero diálogo. 
         </p>
       </div>
       <div className="flex flex-col justify-center items-center h-size bg-no-repeat bg-cover bg-fixed bg-center bg-radio">
@@ -31,26 +22,23 @@ export default function Nosotros() {
           ¿Dónde puedo escuchar “Jóvenes en Acción”?
         </h2>
         <h3 className="text-center select-none text-2xl text-white w-2/3">
-          El programa Jovenes en Acción se emite por Radio Cultura,
-          los jueves de 20 a 21 h, durante el periodo: Febrero-Diciembre o a
-          través de internet en
-          <a href="https://www.fmradiocultura.com.ar" className="text-white">
-            {" "}
-            www.fmradiocultura.com.ar
+          El programa Jóvenes en Acción se emite por Radio Cultura, los jueves de 20 a 21 h, durante el periodo: Febrero-Diciembre o a través de internet en
+          <a href="https://www.youtube.com/@radioculturaba/streams" className="text-white">
+            {" "}            
             https://www.youtube.com/@radioculturaba/streams
           </a>
         </h3>
       </div>
 
       <Cards />
-      <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>
+      <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>  
       <div className="flex justify-center w-full mt-20 mb-12 gap-28 bg-white">
         <div className="flex flex-col w-2/5 bg-white m-2 rounded-lg">
           <h2 className="mt-8 mb-8">
             <span className="text-customCyan2"> |</span> De la radio a la Web...
           </h2>
           <p className="m-6 text-xl">
-            Desde el 2001, nuestra participación en la radio se extendió a la
+            Desde el 2001, nuestra participación en la radio se extendió a la 
             web a través del lanzamiento de nuestro sitio
             www.jovenesenaccion.net. De este modo nos decidimos llegar a todos
             los jóvenes, pensando en vos, que estás por terminar el colegio, o
@@ -70,27 +58,16 @@ export default function Nosotros() {
 
         <div className="flex flex-col w-2/5 bg-white m-2 rounded-lg">
           <h2 className="mt-8 mb-8">
-            <span className="text-customCyan2">|</span> ¿Por qué puede ser tan
-            útil internet?
+            <span className="text-customCyan2">|</span> Impacto
           </h2>
           <p className="m-6 text-xl">
             Somos conscientes que cada vez más, los jóvenes tienen un mayor
             acceso a Internet y a las nuevas tecnologías. Con frecuencia navegan
-            en la red intercambiando información, comunicándose y en redes
-            sociales como Facebook o myspace. Aprovechamos esta oportunidad para
+            en la red intercambiando información, comunicándose. Aprovechamos esta oportunidad para
             que en nuestro sitio encuentres eso que te estaba faltando sobre las
-            dudas que tenias sobre trabajo, estudio, sexualidad, salud y
+            dudas que tenias sobre trabajo, estudio, salud y
             espacios de ocio y recreación. De esta manera sabrás donde buscar
-            antes de perderte por Google, aquí tenés una buena opción. Sabemos
-            que quizás “te gusta una chica o un chico”, ¿pensas que ya sabes
-            todo sobre el AMOR, sobre la sexualidad, el noviazgo?, Tenemos algo
-            para decirte. ¿Sos de los que te quejas cuando ves a personas que
-            discriminan a otras pero no te detenés a pensar si vos también
-            algunas veces discriminas a otros?. Nos interesa que todos los
-            jóvenes del país nos brinden sus aportes para poder publicarlos, en
-            especial nos interesaría contar con tus testimonios sobre cuáles son
-            los desafíos que te planteas, tus preocupaciones, desde tu lugar,
-            desde tu realidad cotidiana
+            antes de perderte por Google, aquí tenés una buena opción. 
           </p>
         </div>
       </div>
