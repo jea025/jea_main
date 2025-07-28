@@ -19,29 +19,29 @@ export default function ControlledCarousel() {
       <Carousel.Item>
         <ExampleCarouselImage img={car1}/>
         <Carousel.Caption>
-          <p>Programa</p>
+          <p>Radio en vivo</p>
           <h2 className="">
-            MULTIMEDIAL, EDUCATIVO
-            <br /> Y SOCIAL
+            PROGRAMA MULTIMEDIAL, EDUCATIVO Y SOCIAL
+            <br /> Los jueves de 20 a 21 h
+            <a href="https://www.fmradiocultura.com.ar/radio-cultura-en-vivo" className="text-white"> www.fmradiocultura.com.ar/radio-cultura-en-vivo</a>
           </h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <ExampleCarouselImage img={car2} />
         <Carousel.Caption>
-          <p>Radio en vivo</p>
+          <p>Salidas Culturales, Integradoras e Inclusivas   </p>
           <h2>
-            Los jueves de 20 a 21 h
-            <br />
-            <a href="https://www.fmradiocultura.com.ar" className="text-white"> www.fmradiocultura.com.ar</a>
+            Cines Debates con apoyo de Cinépolis y Mc Donald's
+            <br /> Participaron más de 1.500 jóvenes
           </h2>
         </Carousel.Caption>
       </Carousel.Item>
       <Carousel.Item>
         <ExampleCarouselImage img={car3} />
         <Carousel.Caption>
-          <p>Impulsando la</p>
-          <h2>REFLEXIÓN</h2>
+          <p>Salidas Culturales, Integradoras e Inclusivas</p>
+          <h2>Visita al Museo de Malvinas</h2>
         </Carousel.Caption>
       </Carousel.Item>
     </Carousel>
