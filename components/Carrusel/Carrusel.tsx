@@ -32,7 +32,7 @@ export default function ControlledCarousel() {
         <Carousel.Caption>
           <p>Salidas Culturales, Integradoras e Inclusivas   </p>
           <h2>
-            Cines Debates con apoyo de Cinépolis y Mc Donald's
+            Cines Debates con apoyo de Cinépolis y Mc Donald&apos;s
             <br /> Participaron más de 1.500 jóvenes
           </h2>
         </Carousel.Caption>
