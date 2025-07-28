@@ -98,6 +98,7 @@ export default function Contacto() {
             className="instagram"
           >
             <Image src="/instagram.svg" alt="instagram" width={24} height={24} />
+            </a>
         </div>
       </div>
     </div>
