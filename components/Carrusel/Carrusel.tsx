@@ -1,6 +1,6 @@
 "use client";
 import "bootstrap/dist/css/bootstrap.min.css";
-import car1 from "../../public/car1.jpeg"
+import car1 from "../../public/car1.jpeg";
 import car2 from "../../public/car2.jpg";
 import car3 from "../../public/car3.jpeg";
 import Carousel from "react-bootstrap/Carousel";
