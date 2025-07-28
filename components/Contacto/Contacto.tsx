@@ -92,21 +92,12 @@ export default function Contacto() {
             <Image src="/facebook.svg" alt="facebook" width={24} height={24} />
           </a>
           <a
-            href="https://www.instagram.com/jovenes.enaccion/"
+            href="https://www.instagram.com/jovenes.enaccion"
             target="_blank"
             rel="noreferrer"
             className="instagram"
           >
             <Image src="/instagram.svg" alt="instagram" width={24} height={24} />
-          </a>
-          <a
-            href="https://wa.link/1d3xsn"
-            target="_blank"
-            rel="noreferrer"
-            className="whatsapp"
-          >
-            <Image src="/whatsapp.svg" alt="whatsapp" width={24} height={24} />
-          </a>
         </div>
       </div>
     </div>
