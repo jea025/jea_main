@@ -70,10 +70,9 @@ export default function Nosotros() {
             antes de perderte por Google, aquí tenés una buena opción. 
           </p>
         </div>
-      </div>
-    </div>*/
+      </div>*/
 
-    {/* INICIO DEL CÓDIGO DEL VIDEO - AQUI DEBES INSERTARLO */}
+      {/* INICIO DEL CÓDIGO DEL VIDEO - AQUI DEBES INSERTARLO */}
       <div className="flex justify-center">
         <h2 className="text-2xl font-semibold text-gray-800 text-center mt-10 mb-6">Conoce nuestra trayectoria</h2>
       </div>
@@ -102,6 +101,8 @@ export default function Nosotros() {
         ></iframe>
       </div>
       {/* FIN DEL CÓDIGO DEL VIDEO */}
+    </div>
+      
     </div>
   );
 }
