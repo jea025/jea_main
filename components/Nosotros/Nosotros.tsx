@@ -1,4 +1,4 @@
-import Cards from "./Cards";
+// import Cards from "./Cards";
 
 export default function Nosotros() {
   return (
@@ -20,7 +20,7 @@ export default function Nosotros() {
       
       <div className="flex flex-col justify-center items-center h-size bg-no-repeat bg-cover bg-fixed bg-center bg-radio">
         <h2 className="text-center select-none text-4xl text-customCyan3">
-          ¿Dónde puedo escuchar "Jóvenes en Acción"?
+          ¿Dónde puedo escuchar &quot;Jóvenes en Acción&quot;?
         </h2>
         <h3 className="text-center select-none text-2xl text-white w-2/3">
           El programa Jóvenes en Acción se emite por Radio Cultura, los jueves de 20 a 21 h, durante el periodo: Febrero-Diciembre o a través de internet en
