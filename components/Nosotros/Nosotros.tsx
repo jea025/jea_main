@@ -17,9 +17,10 @@ export default function Nosotros() {
           de distintas confesiones religiosas y laicas hicieron posible reflejar las distintas realidades que viven los chicos, superando las diferencias, creando un verdadero diálogo. 
         </p>
       </div>
+      
       <div className="flex flex-col justify-center items-center h-size bg-no-repeat bg-cover bg-fixed bg-center bg-radio">
         <h2 className="text-center select-none text-4xl text-customCyan3">
-          ¿Dónde puedo escuchar “Jóvenes en Acción”?
+          ¿Dónde puedo escuchar "Jóvenes en Acción"?
         </h2>
         <h3 className="text-center select-none text-2xl text-white w-2/3">
           El programa Jóvenes en Acción se emite por Radio Cultura, los jueves de 20 a 21 h, durante el periodo: Febrero-Diciembre o a través de internet en
@@ -30,7 +31,8 @@ export default function Nosotros() {
         </h3>
       </div>
 
-      /*<Cards />
+      {/* 
+      <Cards />
       <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>  
       <div className="flex justify-center w-full mt-20 mb-12 gap-28 bg-white">
         <div className="flex flex-col w-2/5 bg-white m-2 rounded-lg">
@@ -70,7 +72,8 @@ export default function Nosotros() {
             antes de perderte por Google, aquí tenés una buena opción. 
           </p>
         </div>
-      </div>*/
+      </div>
+      */}
 
       {/* INICIO DEL CÓDIGO DEL VIDEO - AQUI DEBES INSERTARLO */}
       <div className="flex justify-center">
@@ -101,8 +104,6 @@ export default function Nosotros() {
         ></iframe>
       </div>
       {/* FIN DEL CÓDIGO DEL VIDEO */}
-    </div>
-      
     </div>
   );
 }
