@@ -34,8 +34,8 @@ export default function Nosotros() {
        
       <Cards />
       <div className="w-full h-1 bg-gray-300 mt-24 mb-24 border-r-1"></div>  
-      <div className="flex justify-center w-full mt-20 mb-12 gap-28 bg-white">
-      {/*  <div className="flex flex-col w-2/5 bg-white m-2 rounded-lg">
+      {/* <div className="flex justify-center w-full mt-20 mb-12 gap-28 bg-white">
+       <div className="flex flex-col w-2/5 bg-white m-2 rounded-lg">
           <h2 className="mt-8 mb-8">
             <span className="text-customCyan2"> |</span> De la radio a la Web...
           </h2>
