@@ -71,9 +71,9 @@ export default function Nosotros() {
             espacios de ocio y recreación. De esta manera sabrás donde buscar
             antes de perderte por Google, aquí tenés una buena opción. 
           </p>
-        </div>
+        </div>*/}
       </div>
-      */}
+      
 
       {/* INICIO DEL CÓDIGO DEL VIDEO - AQUI DEBES INSERTARLO */}
       <div className="flex justify-center">
