@@ -28,14 +28,26 @@ const Navbar: React.FC = () => {
               INICIO
             </button>
           </Link>
+
+          <Link href={"/journalism"}>
+            <button
+              id="conocenos más"
+              className={`h-8 px-1 py-2 mx-4 my-1 ${
+                pathname === "/journalism" ? activeClass : defaultClass
+              }`}
+            >
+              CONOCENOS MÁS
+            </button>
+          </Link>
+       
           <Link href={"/news"}>
             <button
-              id="novedades"
+              id="galería"
               className={`h-8 px-1 py-2 mx-4 my-1 ${
                 pathname === "/news" ? activeClass : defaultClass
               }`}
             >
-              NOVEDADES
+              GALERÍA
             </button>
           </Link>
        
@@ -49,17 +61,7 @@ const Navbar: React.FC = () => {
               CONTACTO
             </button>
           </Link>
-          <Link href={"/journalism"}>
-            <button
-              id="prensa"
-              className={`h-8 px-1 py-2 mx-4 my-1 ${
-                pathname === "/journalism" ? activeClass : defaultClass
-              }`}
-            >
-              PRENSA
-            </button>
-          </Link>
-       
+          
         </div>
       </nav>
     </div>
