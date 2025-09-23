@@ -8,12 +8,16 @@ export default function Nosotros() {
           <span className="text-customCyan2">|</span> Acerca de nosotros
         </h2>
         <p className="text-xl">
-          Jóvenes en Acción nació en 1997 como un programa de radio (en Radio Cultura), para contar con un espacio destinado reflejar el sentir y pensar de adolescentes (alumnos secundarios a cargo de la producción y 
-          conducción), sobre temas que les interesan y/o preocupan, en la búsqueda de respuestas a sus inquietudes e interrogantes, dándoles voz, un espacio reflexivo en un medio de comunicación, facilitando el trabajo en 
-          equipo y el desarrollo de habilidades socioemocionales. Desde el 2003, jóvenes mayores de 18 años también participan del programa, algunos están en la facultad, otros quizás cursando el secundario, la universidad o 
-          egresaron, otros están trabajando o liderando proyectos sociales o emprendimientos productivos. Nuestra misión consiste en brindarles un lugar de expresión y encuentro, de modo de sembrar una mayor conciencia y 
-          compromiso social. Esta propuesta cumple ya 28 años de trayectoria, con la idea, producción y realización de la Lic. Carmen Sicardi quien pensó este proyecto al ver la necesidad de ofrecer una mirada optimista y 
-          esperanzadora sobre la juventud. Desde sus inicios hasta la fecha más de 24.000 jóvenes participaron. Gran cantidad de estudiantes secundarios de colegios de Buenos Aires provenientes de escuelas públicas, privadas, 
+          Jóvenes en Acción nació en 1997 como un programa de radio (en Radio Cultura), para contar con un espacio destinado a reflejar el sentir y pensar de alumnos secundarios a cargo de la producción y conducción, sobre 
+          temas que les interesan y/o preocupan, en la búsqueda de respuestas a sus inquietudes e interrogantes, dándoles voz, un espacio reflexivo en un medio de comunicación, facilitando el trabajo en equipo y el desarrollo 
+          de habilidades socioemocionales. Desde 2010, amplió su accionar a jóvenes mayores de 17 años (estudiantes del último año del secundario, de la universidad, profesionales, que provienen de distintas realidades 
+          socioeconómicas, jóvenes líderes de ONGS o emprendimientos), para entrevistar en la radio a CEOS y directivos de empresas y especialistas, generando un puente entre generaciones para que los inspiren. Asimismo, 
+          comenzó a implementar en el 2012, diferentes proyectos por fuera del espacio radial en alianza con ONG'S, Empresas e Instituciones públicas, privadas de Argentina, del exterior y la embajada de EEUU en Argentina, 
+          ampliando el alcance a nivel nacional. Se conformó como una organización que tiene el apoyo institucional de la Fundación FECIC, Fundación para la Educación, la Ciencia y la Cultura y es miembro de HELP ARGENTINA y 
+          de Fundación Potenciar Solidario. 
+           <br />
+          Nuestra misión consiste en brindarles un lugar de expresión y encuentro, de modo de sembrar una mayor conciencia y compromiso social. Esta propuesta cumple ya 28 años de trayectoria, 
+          con la idea, producción y realización de la Lic. Carmen Sicardi quien pensó este proyecto al ver la necesidad de ofrecer una mirada optimista y esperanzadora sobre la juventud. Desde sus inicios hasta la fecha más de 24.000 jóvenes participaron. Gran cantidad de estudiantes secundarios de colegios de Buenos Aires provenientes de escuelas públicas, privadas, 
           de distintas confesiones religiosas y laicas hicieron posible reflejar las distintas realidades que viven los chicos, superando las diferencias, creando un verdadero diálogo. 
         </p>
       </div>
