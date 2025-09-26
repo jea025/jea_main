@@ -35,26 +35,26 @@ export default function Nosotros() {
           <span className="font-bold"> Programa “Capacitaciones en Oratoria y Comunicación Corporal” </span>
           <br />            
           Talleres dirigidos a estudiantes secundarios, universitarios y profesionales (presenciales y/o virtuales) que ofrecen herramientas para potenciar su seguridad y favorecer su desarrollo personal, académico, social y profesional.
-          <br/>
+          <br/><br/>
             
           <span className="font-bold"> Programa Voluntariado </span> 
           <br />
           Actividades de voluntariado -recreativas, culturales, educativas y de promoción de valores- para ayudar a niños y adolescentes de hogares, escuelas y ONG. Los jóvenes voluntarios, entre ellos estudiantes universitarios y profesionales, comparten experiencias y desarrollan habilidades como compromiso, trabajo en equipo y liderazgo. Además, se organizan funciones solidarias de cine-debate de Metegol para 200 chicos que nunca fueron al cine, con el apoyo de empresas y ONG.
-          <br/>
+          <br/><br/>
             
           <span className="font-bold"> Programa “Forestación, Educación y Valores” </span> 
           <br />
           Programa federal de triple impacto en el que 25 jóvenes líderes de Argentina -primeros estudiantes universitarios de sus familias- comparten su testimonio de vida inspirador a alumnos secundarios de escuelas de zonas vulnerables, en las localidades de origen de cada joven. Junto con los adolescentes, plantan árboles frutales que darán alimento saludable y contribuyen al cuidado del medio ambiente. Hasta el momento, se plantaron 57 árboles del total de 250 planificados.
-          <br/>
+          <br/><br/>
 
           <span className="font-bold"> Encuentros Nacionales de Jóvenes Líderes </span> 
           <br />
           Entre 2013 y 2018 se realizaron 10 encuentros con un total de 100 estudiantes universitarios -primeros de sus familias- provenientes de 16 provincias, seleccionados por ONG que los becaban en sus estudios para recibir capacitaciones, adquirir experiencias en empresas e instituciones y participar en actividades culturales y de voluntariado. Los encuentros se llevaron a cabo en la Ciudad Autónoma de Buenos Aires (CABA) y en siete provincias, con el apoyo de un valioso equipo de jóvenes estudiantes universitarios y profesionales, el Departamento de Estado de EE. UU. y su embajada en Argentina, la Fundación Konrad Adenauer, empresas y en alianza con diversas ONG.
           <br/>
             
-          Nuestra misión consiste en brindarles un lugar de expresión y encuentro, de modo de sembrar una mayor conciencia y compromiso social. Esta propuesta cumple ya 28 años de trayectoria, 
+          {/*Nuestra misión consiste en brindarles un lugar de expresión y encuentro, de modo de sembrar una mayor conciencia y compromiso social. Esta propuesta cumple ya 28 años de trayectoria, 
           con la idea, producción y realización de la Lic. Carmen Sicardi quien pensó este proyecto al ver la necesidad de ofrecer una mirada optimista y esperanzadora sobre la juventud. Desde sus inicios hasta la fecha más de 24.000 jóvenes participaron. Gran cantidad de estudiantes secundarios de colegios de Buenos Aires provenientes de escuelas públicas, privadas, 
-          de distintas confesiones religiosas y laicas hicieron posible reflejar las distintas realidades que viven los chicos, superando las diferencias, creando un verdadero diálogo. 
+          de distintas confesiones religiosas y laicas hicieron posible reflejar las distintas realidades que viven los chicos, superando las diferencias, creando un verdadero diálogo.*/}
         </p>
       </div>
       
