@@ -11,11 +11,11 @@ export default function Nosotros() {
           Jóvenes en Acción nació en 1997 como un programa de radio en Radio Cultura creado por la Lic. Carmen Sicardi, fundadora y directora del proyecto. Su objetivo fue crear un espacion donde los adolescentes pudieran expresar con 
           libertad, responsabilidad y compromiso su sentir y pensar.  
           <br />
-          Alumnos secundarios a cargo de la producción y conducción, abordan temas que despiertan su interés o generan preocupación en la búsqueda de respuestas a sus inquietudes. Así, se les brinda un espacio reflexivo en  
-          un medio de comunicación, promueve el trabajo en equipo y el desarrollo de habilidades socioemocionales. Hasta la fecha participaron 60 colegios de CABA y GBA.
+          Alumnos secundarios a cargo de la producción y conducción, abordan temas que despiertan su interés o generan preocupación en la búsqueda de respuestas a sus inquietudes supervisados en sus colegios por la Lic. Sicardi. 
+          Así, se les brinda un espacio reflexivo en un medio de comunicación, promueve el trabajo en equipo y el desarrollo de habilidades socioemocionales. Hasta la fecha participaron 60 colegios de CABA y GBA.
           <br />
           Desde 2010, amplió su accionar a jóvenes mayores de 17 años (estudiantes del último año del secundario, de la universidad, profesionales, que provienen de distintas realidades socioeconómicas, jóvenes líderes de ONGS o 
-          emprendimientos), para entrevistar en la radio a CEOS y directivos de empresas y especialistas, generando un puente entre generaciones para que los inspiren. También intermedia para que los jóvenes, en situación de vulnerabilidad 
+          emprendimientos), para entrevistar en la radio a CEOS, directivos de empresas y especialistas, generando un puente entre generaciones para que los inspiren. También intermedia para que los jóvenes, en situación de vulnerabilidad 
           social, obtengan becas universitarias, a quienes acompaña a lo largo de sus carreras y facilita el acceso empleos.
           <br />
           En el 2012, la Lic. Sicardi comenzó a implementar diferentes proyectos por fuera del espacio radial, en alianza con ONG'S, Empresas e Instituciones públicas y privadas de Argentina, así como la embajada de EEUU en Argentina y Fundación Konrad Adenauer, 
@@ -27,27 +27,27 @@ export default function Nosotros() {
           Accionar de Jóvenes en Acción: distintos programas que se implementan en Buenos Aires y en diferentes provincias de Argentina:
           <br />
           
-          <span className="font-bold"> Programa “Salidas Culturales, Inclusivas e Integradoras” <span>
+          <span className="font-bold"> Programa “Salidas Culturales, Inclusivas e Integradoras” </span>
           <br />
           Salidas gratuitas que incluyen cines-debate, exposiciones y eventos en la Ciudad de Buenos Aires y el Gran Buenos Aires, favoreciendo la integración de jóvenes de distintas realidades socioeconómicas, con el fin de generar espacios de encuentro enriquecedores y promover el intercambio de experiencias en torno a sus carreras y vocaciones. A su vez, organiza actividades con jóvenes con discapacidad. 
           <br />
             
-          <span className="font-bold"> Programa “Capacitaciones en Oratoria y Comunicación Corporal” <span>
+          <span className="font-bold"> Programa “Capacitaciones en Oratoria y Comunicación Corporal” </span>
           <br />            
           Talleres dirigidos a estudiantes secundarios, universitarios y profesionales (presenciales y/o virtuales) que ofrecen herramientas para potenciar su seguridad y favorecer su desarrollo personal, académico, social y profesional.
           <br/>
             
-          <span className="font-bold"> Programa Voluntariado <span> 
+          <span className="font-bold"> Programa Voluntariado </span> 
           <br />
           Actividades de voluntariado -recreativas, culturales, educativas y de promoción de valores- para ayudar a niños y adolescentes de hogares, escuelas y ONG. Los jóvenes voluntarios, entre ellos estudiantes universitarios y profesionales, comparten experiencias y desarrollan habilidades como compromiso, trabajo en equipo y liderazgo. Además, se organizan funciones solidarias de cine-debate de Metegol para 200 chicos que nunca fueron al cine, con el apoyo de empresas y ONG.
           <br/>
             
-          <span className="font-bold"> Programa “Forestación, Educación y Valores” <span> 
+          <span className="font-bold"> Programa “Forestación, Educación y Valores” </span> 
           <br />
           Programa federal de triple impacto en el que 25 jóvenes líderes de Argentina -primeros estudiantes universitarios de sus familias- comparten su testimonio de vida inspirador a alumnos secundarios de escuelas de zonas vulnerables, en las localidades de origen de cada joven. Junto con los adolescentes, plantan árboles frutales que darán alimento saludable y contribuyen al cuidado del medio ambiente. Hasta el momento, se plantaron 57 árboles del total de 250 planificados.
           <br/>
 
-          <span className="font-bold"> Encuentros Nacionales de Jóvenes Líderes <span> 
+          <span className="font-bold"> Encuentros Nacionales de Jóvenes Líderes </span> 
           <br />
           Entre 2013 y 2018 se realizaron 10 encuentros con un total de 100 estudiantes universitarios -primeros de sus familias- provenientes de 16 provincias, seleccionados por ONG que los becaban en sus estudios para recibir capacitaciones, adquirir experiencias en empresas e instituciones y participar en actividades culturales y de voluntariado. Los encuentros se llevaron a cabo en la Ciudad Autónoma de Buenos Aires (CABA) y en siete provincias, con el apoyo de un valioso equipo de jóvenes estudiantes universitarios y profesionales, el Departamento de Estado de EE. UU. y su embajada en Argentina, la Fundación Konrad Adenauer, empresas y en alianza con diversas ONG.
           <br/>
