@@ -36,7 +36,7 @@ const Navbar: React.FC = () => {
                 pathname === "/journalism" ? activeClass : defaultClass
               }`}
             >
-              CONOCENOS MÁS
+              CONÓCENOS MÁS
             </button>
           </Link>
        

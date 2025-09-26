@@ -90,7 +90,7 @@ export default function Prensa() {
             <div className="numeroDestacado">10</div>
             <div className="textoLogro">
               <strong>Encuentros Nacionales</strong><br />
-              de Jóvenes Líderes, participaron 100 jóvenes que son primeros estudiantes universitarios de sus familias, de 16 provincias de Argentina con el apoyo del Departamento de Estado de EEUU, su embajada en Argentina, la Fundación Konrad Adenauer y en alianza con empresas y ONG'S<br />
+              de Jóvenes Líderes, participaron 100 jóvenes que son primeros estudiantes universitarios de sus familias, de 16 provincias de Argentina con el apoyo del Departamento de Estado de EEUU, su embajada en Argentina, la Fundación Konrad Adenauer y en alianza con empresas y ONGs<br />
               <a href="https://www.youtube.com/watch?v=DaiK9izexZo" target="_blank" rel="noopener noreferrer" className="linkVideo">Ver video</a>
             </div>
           </div>
@@ -99,7 +99,7 @@ export default function Prensa() {
             <div className="numeroDestacado">150</div>
             <div className="textoLogro">
               <strong>Plantación de árboles</strong><br />
-              frutales en Escuelas y ONG'S de distintos rincones de Argentina, liderados por 25 jóvenes líderes (que son los primeros universitarios de sus familias) para inspirar a alumnos secundarios. Ya se plantaron 57 en La Pampa, en Florencio Varela, y San Miguel, Pcia. De Bs. As. y Misiones.
+              frutales en Escuelas y ONGs de distintos rincones de Argentina, liderados por 25 jóvenes líderes (que son los primeros universitarios de sus familias) para inspirar a alumnos secundarios. Ya se plantaron 57 en La Pampa, en Florencio Varela, y San Miguel, Pcia. De Bs. As. y Misiones.
             </div>
           </div>
 
