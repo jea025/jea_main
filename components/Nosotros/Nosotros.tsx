@@ -18,19 +18,19 @@ export default function Nosotros() {
           emprendimientos), para entrevistar en la radio a CEOS, directivos de empresas y especialistas, generando un puente entre generaciones para que los inspiren. También intermedia para que los jóvenes, en situación de vulnerabilidad 
           social, obtengan becas universitarias, a quienes acompaña a lo largo de sus carreras y facilita el acceso empleos.
           <br />
-          En el 2012, la Lic. Sicardi comenzó a implementar diferentes proyectos por fuera del espacio radial, en alianza con ONG'S, Empresas e Instituciones públicas y privadas de Argentina, así como la embajada de EEUU en Argentina y Fundación Konrad Adenauer, 
+          En el 2012, la Lic. Sicardi comenzó a implementar diferentes proyectos por fuera del espacio radial, en alianza con ONGs, Empresas e Instituciones públicas y privadas de Argentina, así como la embajada de EEUU en Argentina y Fundación Konrad Adenauer, 
           ampliando su alcance a nivel nacional. 
           <br />
           Se consolidó como una organización que tiene el apoyo institucional de la Fundación FECIC, Fundación para la Educación, la Ciencia y la Cultura y es miembro de HELP ARGENTINA y de Fundación Potenciar Solidario.  <span className="font-bold"> Ha impactado en más de 24.000 niños, adolescentes y jóvenes de todo el país.
           </span>
-          <br />
+          <br /> <br />
           Accionar de Jóvenes en Acción: distintos programas que se implementan en Buenos Aires y en diferentes provincias de Argentina:
           <br />
           
           <span className="font-bold"> Programa “Salidas Culturales, Inclusivas e Integradoras” </span>
-          <br />
+          <br /> 
           Salidas gratuitas que incluyen cines-debate, exposiciones y eventos en la Ciudad de Buenos Aires y el Gran Buenos Aires, favoreciendo la integración de jóvenes de distintas realidades socioeconómicas, con el fin de generar espacios de encuentro enriquecedores y promover el intercambio de experiencias en torno a sus carreras y vocaciones. A su vez, organiza actividades con jóvenes con discapacidad. 
-          <br />
+          <br /><br />
             
           <span className="font-bold"> Programa “Capacitaciones en Oratoria y Comunicación Corporal” </span>
           <br />            
