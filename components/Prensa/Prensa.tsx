@@ -124,6 +124,18 @@ export default function Prensa() {
         <div className="prensaSubsection">
           <h2 className="texto tituloH2">Artículos de Prensa</h2>
           
+          {/* Artículo CONSUDEC Destacado */}
+          <div className="articuloDestacadoPrincipal">
+            <div className="etiquetaDestacadoPrincipal">ARTÍCULO DESTACADO</div>
+            <a href="https://consudec.org/wp/revistas/#ago25_1" target="_blank" rel="noopener noreferrer" className="enlaceArticuloDestacado">
+              Jóvenes en Acción - Revista CONSUDEC
+            </a>
+            <p className="descripcionDestacada">
+              Artículo especial sobre el impacto y la trayectoria de Jóvenes en Acción publicado en la prestigiosa revista de CONSUDEC (Consejo Superior de Educación Católica).
+            </p>
+            <div className="iconoRevista">📖</div>
+          </div>
+          
           <div className="articulosLista">
             <div className="articuloItem">
               <a href="https://aica.org/noticia-jovenes-en-accion-celebro-25-anos-en-el-desarrollo-de-valores-para-brindar-oportunidades" target="_blank" rel="noopener noreferrer" className="enlaceArticulo">
