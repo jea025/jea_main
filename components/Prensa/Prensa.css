@@ -307,10 +307,32 @@
     font-size: 2.5rem;
     min-width: 60px;
     text-align: center;
+    flex-shrink: 0;
 }
 
 .premioContenido {
     flex: 1;
+    min-width: 0;
+}
+
+.premioImagenes {
+    flex-shrink: 0;
+    max-width: 250px;
+}
+
+.imagenPremio {
+    width: 100%;
+    height: auto;
+    max-width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 2px solid #ffffff;
+}
+
+.imagenPremio:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
 }
 
 .premioTitulo {
@@ -382,9 +404,26 @@
         text-align: center;
         gap: 15px;
     }
+    
+    .premioImagenes {
+        max-width: 200px;
+        align-self: center;
+    }
+    
+    .imagenPremio {
+        max-width: 200px;
+    }
 }
 
 @media (max-width: 600px) {
+    .premioImagenes {
+        max-width: 180px;
+    }
+    
+    .imagenPremio {
+        max-width: 180px;
+    }
+    
     .enlaceArticuloDestacado {
         font-size: 1.4rem;
     }
@@ -404,6 +443,14 @@
 }
 
 @media (max-width: 470px) {
+    .premioImagenes {
+        max-width: 150px;
+    }
+    
+    .imagenPremio {
+        max-width: 150px;
+    }
+    
     .enlaceArticuloDestacado {
         font-size: 1.2rem;
     }

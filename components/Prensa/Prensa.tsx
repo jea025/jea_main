@@ -1,6 +1,8 @@
 import "./Prensa.css";
 import Image from "next/image";
 import afiche from '../../public/afiche.jpg';
+import santaClaraImg from '../../public/Santa Clara Premio.jpg';
+import embajadaEEUUImg from '../../public/Embajada EEUU.jpg';
 
 export default function Prensa() {
   return (
@@ -201,6 +203,13 @@ export default function Prensa() {
                   Reconocimiento a Jóvenes en Acción por su aporte a la comunicación con valores intelectuales y morales a través de medios de comunicación.
                 </p>
               </div>
+              <div className="premioImagenes">
+                <Image 
+                  src={santaClaraImg} 
+                  alt="Premio Santa Clara de Asís - Ceremonia de entrega" 
+                  className="imagenPremio"
+                />
+              </div>
             </div>
 
             <div className="premioItem">
@@ -212,6 +221,13 @@ export default function Prensa() {
                   📜 Entrega de diploma y agasajo en la sede diplomática<br />
                   El Proyecto PLIMIC (Programa de Liderazgo Inclusivo, Multimedial y Cultural) fue financiado por el Departamento de Estado de EEUU y supervisado por la Embajada. Jóvenes en Acción recibió un diploma en reconocimiento a su labor.
                 </p>
+              </div>
+              <div className="premioImagenes">
+                <Image 
+                  src={embajadaEEUUImg} 
+                  alt="Reconocimiento Embajada de Estados Unidos - Ceremonia" 
+                  className="imagenPremio"
+                />
               </div>
             </div>
           </div>
