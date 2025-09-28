@@ -1,28 +1,30 @@
-# Etapa 1: build con Node completo
+# Etapa 1: Build
 FROM node:18-alpine AS builder
 WORKDIR /app
 
-# Copiar solo package.json y lockfile
+# Copiar package.json y lockfile
 COPY package*.json ./
 
 # Instalar todas las dependencias para build
 RUN npm ci --legacy-peer-deps
 
-# Copiar solo el código fuente necesario
+# Copiar archivos necesarios para el build
+COPY next.config.ts ./
+COPY tsconfig.json ./
 COPY pages/ pages/
 COPY components/ components/
-COPY public/ public/
 COPY styles/ styles/
-# Agregar cualquier otro directorio que sea parte del build
+COPY public/ public/
+COPY app/ app/  # si usas el nuevo App Router de Next 13
 
 # Generar build de Next.js
 RUN npm run build
 
-# Etapa 2: runtime con Node.js ligero
+# Etapa 2: Runtime
 FROM node:18-alpine
 WORKDIR /app
 
-# Copiar build y package.json
+# Copiar solo lo necesario del builder
 COPY --from=builder /app/package*.json ./
 COPY --from=builder /app/.next ./.next
 COPY --from=builder /app/public ./public
