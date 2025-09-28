@@ -11,16 +11,16 @@ RUN npm ci
 COPY . .
 RUN npm run build
 
-# Etapa 2: runtime con Nginx
-FROM nginx:1.25-alpine
+# Etapa 2: runtime con Node.js ligero
+FROM node:18-alpine
 
-WORKDIR /usr/share/nginx/html
+WORKDIR /app
 
-# Copiar build al directorio de Nginx
-COPY --from=builder /app/dist ./
+# Copiar dependencias de producción y build
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
+RUN npm ci --production
 
-# Copiar configuración personalizada de Nginx (opcional)
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 3001
+CMD ["npm", "start"]
