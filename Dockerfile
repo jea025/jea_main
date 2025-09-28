@@ -1,24 +1,26 @@
-# Etapa 1: build
-FROM gcr.io/distroless/nodejs18 AS builder
+# Etapa 1: build con Node completo
+FROM node:18-alpine AS builder
 
 WORKDIR /app
 
-# Copiar solo package.json y lock para cache
+# Copiar solo package.json y lock para aprovechar cache
 COPY package*.json ./
 RUN npm ci
 
+# Copiar el resto del código y generar build
 COPY . .
 RUN npm run build
 
-# Etapa 2: runtime
-FROM gcr.io/distroless/nodejs18
+# Etapa 2: runtime con Nginx
+FROM nginx:1.25-alpine
 
-WORKDIR /app
+WORKDIR /usr/share/nginx/html
 
-# Copiar solo el build y dependencias de producción
-COPY --from=builder /app/dist ./dist
-COPY package*.json ./
-RUN npm ci --production
+# Copiar build al directorio de Nginx
+COPY --from=builder /app/dist ./
 
-EXPOSE 3001
-CMD ["npm", "start"]
+# Copiar configuración personalizada de Nginx (opcional)
+COPY nginx.conf /etc/nginx/conf.d/default.conf
+
+EXPOSE 80
+CMD ["nginx", "-g", "daemon off;"]
