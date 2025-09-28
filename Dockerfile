@@ -8,12 +8,8 @@ COPY package*.json ./
 # Instalar todas las dependencias para build
 RUN npm ci --legacy-peer-deps
 
-# Copiar archivos necesarios para el build
-COPY next.config.ts ./
-COPY tsconfig.json ./
-COPY components/ components/
-COPY public/ public/
-COPY app/ app/
+# Copiar todo el código (excepto lo que esté en .dockerignore)
+COPY . .
 
 # Generar build de Next.js
 RUN npm run build
