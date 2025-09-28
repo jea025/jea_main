@@ -11,11 +11,9 @@ RUN npm ci --legacy-peer-deps
 # Copiar archivos necesarios para el build
 COPY next.config.ts ./
 COPY tsconfig.json ./
-COPY pages/ pages/
 COPY components/ components/
-COPY styles/ styles/
 COPY public/ public/
-COPY app/ app/  # si usas el nuevo App Router de Next 13
+COPY app/ app/
 
 # Generar build de Next.js
 RUN npm run build
