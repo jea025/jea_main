@@ -1,26 +1,30 @@
-# Etapa 1: build con Node completo
+# Etapa 1: Build
 FROM node:18-alpine AS builder
-
 WORKDIR /app
 
-# Copiar solo package.json y lock para aprovechar cache
+# Copiar package.json y lockfile
 COPY package*.json ./
-RUN npm ci
 
-# Copiar el resto del código y generar build
+# Instalar todas las dependencias para build
+RUN npm ci --legacy-peer-deps
+
+# Copiar todo el código (excepto lo que esté en .dockerignore)
 COPY . .
+
+# Generar build de Next.js
 RUN npm run build
 
-# Etapa 2: runtime con Nginx
-FROM nginx:1.25-alpine
+# Etapa 2: Runtime
+FROM node:18-alpine
+WORKDIR /app
 
-WORKDIR /usr/share/nginx/html
+# Copiar solo lo necesario del builder
+COPY --from=builder /app/package*.json ./
+COPY --from=builder /app/.next ./.next
+COPY --from=builder /app/public ./public
 
-# Copiar build al directorio de Nginx
-COPY --from=builder /app/dist ./
+# Instalar solo dependencias de producción
+RUN npm ci --production
 
-# Copiar configuración personalizada de Nginx (opcional)
-COPY nginx.conf /etc/nginx/conf.d/default.conf
-
-EXPOSE 80
-CMD ["nginx", "-g", "daemon off;"]
+EXPOSE 3001
+CMD ["npm", "start"]
