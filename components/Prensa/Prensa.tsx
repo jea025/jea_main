@@ -130,7 +130,7 @@ export default function Prensa() {
           <div className="articuloDestacadoPrincipal">
             <div className="etiquetaDestacadoPrincipal">ARTÍCULO DESTACADO</div>
             <a href="https://consudec.org/wp/revistas/#ago25_1" target="_blank" rel="noopener noreferrer" className="enlaceArticuloDestacado">
-              Jóvenes en Acción - Revista CONSUDEC
+              Jóvenes en Acción - Revista CONSUDEC - Agosto 2025
             </a>
             <p className="descripcionDestacada">
               Artículo especial sobre el impacto y la trayectoria de Jóvenes en Acción publicado en la prestigiosa revista de CONSUDEC (Consejo Superior de Educación Católica).
@@ -147,7 +147,7 @@ export default function Prensa() {
             </div>
 
             <div className="articuloItem">
-              <span className="tituloArticulo">Noticias del mundo social</span>
+              <a href="https://www.lanacion.com.ar/comunidad/noticias-del-mundo-social-nid2081739" target="_blank" rel="noopener noreferrer" className="enlaceArticulo"> Noticias del mundo social</a>
               <span className="fechaArticulo">13 de noviembre de 2017</span>
             </div>
 
@@ -165,24 +165,24 @@ export default function Prensa() {
               <span className="fechaArticulo">2 de marzo de 2013</span>
             </div>
 
-            <div className="articuloItem destacado">
-              <span className="tituloArticulo">La voz de los invisibles - LA NACIÓN</span>
+            <div className="articuloItem ">{/*destacado*/}
+              <a href="https://www.lanacion.com.ar/comunidad/la-voz-de-los-invisibles-nid1361797" target="_blank" rel="noopener noreferrer" className="enlaceArticulo"> La voz de los invisibles - LA NACIÓN</a>
               <span className="fechaArticulo">2 de abril de 2011</span>
-              <span className="etiquetaDestacado">DESTACADO</span>
+              {/*<span className="etiquetaDestacado">DESTACADO</span>*/}
             </div>
 
             <div className="articuloItem">
-              <span className="tituloArticulo">Distinguen los valores solidarios en medios de comunicación</span>
+              <a href="https://www.lanacion.com.ar/cultura/distinguen-los-valores-solidarios-en-medios-de-comunicacion-nid957951" target="_blank" rel="noopener noreferrer" className="enlaceArticulo"> Distinguen los valores solidarios en medios de comunicación </a>
               <span className="fechaArticulo">31 de octubre de 2007</span>
             </div>
 
             <div className="articuloItem">
-              <span className="tituloArticulo">La cultura también se hace oír - LA NACIÓN</span>
+              <a href="https://www.lanacion.com.ar/espectaculos/radio/la-cultura-tambien-se-hace-oir-nid696742" target="_blank" rel="noopener noreferrer" className="enlaceArticulo">La cultura también se hace oír - LA NACIÓN</a>
               <span className="fechaArticulo">17 de abril de 2005</span>
             </div>
 
             <div className="articuloItem">
-              <span className="tituloArticulo">Veinte minutos de aire</span>
+              <a href="https://www.lanacion.com.ar/espectaculos/veinte-minutos-de-aire-nid602936" target="_blank" rel="noopener noreferrer" className="enlaceArticulo">Veinte minutos de aire</a>
               <span className="fechaArticulo">21 de mayo de 2004</span>
             </div>
           </div>
