@@ -3,7 +3,6 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/j-logo.svg";
-//import hamIcon from "../../public/ham.svg";
 import { usePathname } from "next/navigation";
 
 const Navbar: React.FC = () => {
@@ -63,19 +62,20 @@ const Navbar: React.FC = () => {
 
   return (
     <>
-      <div className="w-full h-16">
-        <nav className="w-full bg-customCyan flex justify-between items-center fixed z-50 border-b-2 border-cyan-800">
+      <div className="w-full h-20 md:h-24">
+        <nav className="w-full h-20 md:h-24 bg-customCyan flex justify-between items-center fixed z-50 border-b-2 border-cyan-800 px-4 md:px-16">
           {/* Logo */}
-          <Link href={'/home'} id="home" className="z-60">
+          <Link href={'/home'} id="home" className="h-full flex items-center py-2">
             <Image 
-              className="w-12 h-12 md:w-16 md:h-16 ml-4 md:ml-16 transition-all duration-300" 
+              className="h-full w-auto transition-all duration-300" 
               src={logo} 
-              alt="logo" 
+              alt="logo"
+              style={{ objectFit: 'contain' }}
             />
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex h-16 items-center w-full justify-end mr-14">
+          <div className="hidden md:flex items-center justify-end gap-2 lg:gap-4">
             {menuItems.map((item) => (
               <Link key={item.id} href={item.href}>
                 <button
@@ -93,7 +93,7 @@ const Navbar: React.FC = () => {
           {/* Mobile Hamburger Button */}
           <button
             onClick={toggleMenu}
-            className="md:hidden mr-4 z-60 p-2 rounded-lg hover:bg-cyan-700 transition-colors duration-300"
+            className="md:hidden z-60 p-2 rounded-lg hover:bg-cyan-700 transition-colors duration-300"
             aria-label="Toggle menu"
           >
             <div className="relative w-6 h-6">
@@ -127,7 +127,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu */}
       <div
-        className={`fixed top-16 left-0 right-0 bg-customCyan z-40 md:hidden transform transition-all duration-300 ease-in-out ${
+        className={`fixed top-20 md:top-24 left-0 right-0 bg-customCyan z-40 md:hidden transform transition-all duration-300 ease-in-out ${
           isMenuOpen 
             ? 'translate-y-0 opacity-100' 
             : '-translate-y-full opacity-0'
