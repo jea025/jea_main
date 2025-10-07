@@ -221,17 +221,6 @@
   font-weight: 800;
 }
 
-.galeria-futura {
-  min-height: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: #6b7280;
-  font-style: italic;
-  position: relative;
-  z-index: 1;
-}
-
 /* Tercera sección - Forestación */
 .tercera-seccion {
   background: linear-gradient(135deg, #f0fdf4 0%, #dcfce7 50%, #f0fdf4 100%);

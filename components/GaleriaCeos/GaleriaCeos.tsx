@@ -1,13 +1,12 @@
 "use client";
-import React, { useState, useEffect } from "react";
-import Image from "next/image";
+import React, { useState, useEffect, useCallback } from "react";
+import Image, { StaticImageData } from "next/image";
 import "./GaleriaCeos.css";
 
 // Importar las imágenes de CEOs
 import ceos1 from '../../public/ceos y emprendedores.jpeg';
 import ceos2 from '../../public/ceos y emprendedores (1).jpeg';
 import ceos3 from '../../public/ceos y emprendedores (2).jpeg';
-//import ceos3 from '../../public/ceos y emprendedores.png';
 
 // Importar las imágenes de Colegios
 import colegios1 from '../../public/colegios (1).jpeg';
@@ -18,13 +17,13 @@ import plantacion1 from '../../public/Plantación.jpeg';
 import plantacion2 from '../../public/plantación (2).jpeg';
 import plantacion3 from '../../public/plantación (3).jpeg';
 
-// Importar las imágenes de Plantación
+// Importar las imágenes de Voluntariado
 import voluntariado1 from '../../public/voluntariado.jpeg';
 import voluntariado2 from '../../public/voluntariado (2).jpeg';
 import voluntariado3 from '../../public/voluntariado.jpg';
 
 interface ImagenGaleria {
-  src: any;
+  src: string | StaticImageData;
   alt: string;
   titulo?: string;
 }
@@ -46,7 +45,6 @@ const imagenesGaleriaCeos: ImagenGaleria[] = [
     titulo: "Encuentros Inspiradores"
   }
 ];
-  
 
 const imagenesColegios: ImagenGaleria[] = [
   {
@@ -79,7 +77,6 @@ const imagenesPlantacion: ImagenGaleria[] = [
   }
 ];
 
-
 const imagenesVoluntariado: ImagenGaleria[] = [
   {
     src: voluntariado1,
@@ -99,33 +96,33 @@ const imagenesVoluntariado: ImagenGaleria[] = [
 ];
 
 export default function GaleriaCeos() {
-  const [imagenSeleccionada, setImagenSeleccionada] = useState<{galeria: string, index: number} | null>(null);
+  const [imagenSeleccionada, setImagenSeleccionada] = useState<{galeria: string; index: number} | null>(null);
 
-  const abrirModal = (galeria: string, index: number) => {
+  const abrirModal = useCallback((galeria: string, index: number) => {
     setImagenSeleccionada({galeria, index});
     document.body.style.overflow = 'hidden';
-  };
+  }, []);
 
-  const cerrarModal = (e?: React.MouseEvent) => {
+  const cerrarModal = useCallback((e?: React.MouseEvent) => {
     if (e) {
       e.stopPropagation();
     }
     setImagenSeleccionada(null);
     document.body.style.overflow = 'unset';
-  };
+  }, []);
 
-  const obtenerImagenesActuales = () => {
+  const obtenerImagenesActuales = useCallback((): ImagenGaleria[] => {
     if (!imagenSeleccionada) return [];
     switch(imagenSeleccionada.galeria) {
       case 'ceos': return imagenesGaleriaCeos;
       case 'colegios': return imagenesColegios;
       case 'plantacion': return imagenesPlantacion;
-      case 'hogar': return imagenesVoluntariado; 
+      case 'hogar': return imagenesVoluntariado;
       default: return [];
     }
-  };
+  }, [imagenSeleccionada]);
 
-  const navegarImagen = (e: React.MouseEvent, direccion: 'anterior' | 'siguiente') => {
+  const navegarImagen = useCallback((e: React.MouseEvent, direccion: 'anterior' | 'siguiente') => {
     e.stopPropagation();
     if (!imagenSeleccionada) return;
     
@@ -138,13 +135,13 @@ export default function GaleriaCeos() {
       nuevoIndice = imagenSeleccionada.index === imagenesActuales.length - 1 ? 0 : imagenSeleccionada.index + 1;
     }
     setImagenSeleccionada({galeria: imagenSeleccionada.galeria, index: nuevoIndice});
-  };
+  }, [imagenSeleccionada, obtenerImagenesActuales]);
 
   // Navegación con teclado
   useEffect(() => {
+    if (!imagenSeleccionada) return;
+    
     const handleKeyDown = (e: KeyboardEvent) => {
-      if (!imagenSeleccionada) return;
-      
       const imagenesActuales = obtenerImagenesActuales();
       
       if (e.key === 'ArrowLeft') {
@@ -160,7 +157,7 @@ export default function GaleriaCeos() {
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [imagenSeleccionada]);
+  }, [imagenSeleccionada, obtenerImagenesActuales, cerrarModal]);
 
   const renderGaleria = (imagenes: ImagenGaleria[], nombreGaleria: string) => (
     <div className="galeria-grid">
@@ -171,7 +168,7 @@ export default function GaleriaCeos() {
           onClick={() => abrirModal(nombreGaleria, index)}
           role="button"
           tabIndex={0}
-          onKeyPress={(e) => {
+          onKeyDown={(e) => {
             if (e.key === 'Enter' || e.key === ' ') {
               abrirModal(nombreGaleria, index);
             }
@@ -258,9 +255,9 @@ export default function GaleriaCeos() {
             <span className="texto-forestacion">HOGAR</span> {" "}
             <span className="texto-educacion-valores">DE</span> {" "}
             <span className="texto-valores">NIÑOS</span> {" "}
-            <span className="texto-forestacion">"Puerta </span>
+            <span className="texto-forestacion">&ldquo;Puerta </span>
             <span className="texto-educacion-valores">del</span> {" "}
-            <span className="texto-valores">Cielo"</span>
+            <span className="texto-valores">Cielo&rdquo;</span>
           </h2>
         </div>
         
