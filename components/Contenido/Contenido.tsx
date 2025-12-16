@@ -46,8 +46,11 @@ export default function PaginationNews() {
         setNews(data.news);
         setpageActual(data.pageActual);
         settotalPages(data.totalPages);
-      } catch (error) {
-        console.error("Error al cargar noticias:", error);
+      } catch (error: unknown) {
+          const message =
+          error instanceof Error ? error.message : "Error desconocido";
+
+          console.error("Error al cargar noticias:", message);
       }
     };
 
