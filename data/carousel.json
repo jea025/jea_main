@@ -1,0 +1,30 @@
+{
+  "hero": {
+    "slides": [
+      {
+        "id": 1,
+        "image": "/car1.jpeg",
+        "category": "Radio en vivo",
+        "title": "PROGRAMA MULTIMEDIAL, EDUCATIVO Y SOCIAL",
+        "subtitle": "Los jueves de 20 a 21 h",
+        "link": {
+          "url": "https://www.fmradiocultura.com.ar/radio-cultura-en-vivo",
+          "text": "www.fmradiocultura.com.ar/radio-cultura-en-vivo"
+        }
+      },
+      {
+        "id": 2,
+        "image": "/car2.jpg",
+        "category": "Salidas Culturales, Integradoras e Inclusivas",
+        "title": "Cines Debates con apoyo de Cinépolis y Mc Donald's",
+        "subtitle": "Participaron más de 1.500 jóvenes"
+      },
+      {
+        "id": 3,
+        "image": "/car3.jpeg",
+        "category": "Salidas Culturales, Integradoras e Inclusivas",
+        "title": "Visita al Museo de Malvinas"
+      }
+    ]
+  }
+}

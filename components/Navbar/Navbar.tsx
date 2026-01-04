@@ -4,11 +4,14 @@ import Image from "next/image";
 import Link from "next/link";
 import logo from "../../public/j-logo.svg";
 import { usePathname } from "next/navigation";
+import navigationData from "@/data/navigation.json";
 
 const Navbar: React.FC = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
   const pathname = usePathname();
+
+  const { menuItems, mobileContactInfo } = navigationData.navigation;
 
   // Detectar si es dispositivo móvil
   useEffect(() => {
@@ -17,10 +20,10 @@ const Navbar: React.FC = () => {
     };
 
     checkIsMobile();
-    window.addEventListener('resize', checkIsMobile);
+    window.addEventListener("resize", checkIsMobile);
 
     return () => {
-      window.removeEventListener('resize', checkIsMobile);
+      window.removeEventListener("resize", checkIsMobile);
     };
   }, []);
 
@@ -32,13 +35,13 @@ const Navbar: React.FC = () => {
   // Prevent body scroll when menu is open
   useEffect(() => {
     if (isMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     }
 
     return () => {
-      document.body.style.overflow = 'unset';
+      document.body.style.overflow = "unset";
     };
   }, [isMenuOpen]);
 
@@ -46,31 +49,24 @@ const Navbar: React.FC = () => {
     setIsMenuOpen(!isMenuOpen);
   };
 
-  const activeClass = isMobile 
-    ? "text-cyan-300 font-bold border-b-2 border-cyan-300 pb-2" 
+  const activeClass = isMobile
+    ? "text-cyan-300 font-bold border-b-2 border-cyan-300 pb-2"
     : "border-l-2 border-white text-white font-bold";
-  const defaultClass = isMobile 
-    ? "text-white hover:text-cyan-300 transition-colors duration-300" 
+  const defaultClass = isMobile
+    ? "text-white hover:text-cyan-300 transition-colors duration-300"
     : "text-white hover:text-gray-300";
-
-  const menuItems = [
-    { href: "/home", id: "inicio", label: "INICIO" },
-    { href: "/journalism", id: "conocenos-mas", label: "CONÓCENOS MÁS" },
-    { href: "/news", id: "galeria", label: "GALERÍA" },
-    { href: "/contact", id: "contacto", label: "CONTACTO" }
-  ];
 
   return (
     <>
       <div className="w-full h-20 md:h-24">
         <nav className="w-full h-20 md:h-24 bg-customCyan flex justify-between items-center fixed z-50 border-b-2 border-cyan-800 px-4 md:px-16">
           {/* Logo */}
-          <Link href={'/home'} id="home" className="h-full flex items-center py-2">
-            <Image 
-              className="h-full w-auto transition-all duration-300" 
-              src={logo} 
+          <Link href={"/home"} id="home" className="h-full flex items-center py-2">
+            <Image
+              className="h-full w-auto transition-all duration-300"
+              src={logo}
               alt="logo"
-              style={{ objectFit: 'contain' }}
+              style={{ objectFit: "contain" }}
             />
           </Link>
 
@@ -99,17 +95,17 @@ const Navbar: React.FC = () => {
             <div className="relative w-6 h-6">
               <div
                 className={`absolute h-0.5 w-6 bg-white transform transition-all duration-300 ease-in-out ${
-                  isMenuOpen ? 'rotate-45 translate-y-2.5' : 'translate-y-0'
+                  isMenuOpen ? "rotate-45 translate-y-2.5" : "translate-y-0"
                 }`}
               />
               <div
                 className={`absolute h-0.5 w-6 bg-white transform transition-all duration-300 ease-in-out translate-y-2.5 ${
-                  isMenuOpen ? 'opacity-0' : 'opacity-100'
+                  isMenuOpen ? "opacity-0" : "opacity-100"
                 }`}
               />
               <div
                 className={`absolute h-0.5 w-6 bg-white transform transition-all duration-300 ease-in-out ${
-                  isMenuOpen ? '-rotate-45 translate-y-2.5' : 'translate-y-5'
+                  isMenuOpen ? "-rotate-45 translate-y-2.5" : "translate-y-5"
                 }`}
               />
             </div>
@@ -120,7 +116,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu Overlay */}
       <div
         className={`fixed inset-0 bg-black bg-opacity-50 z-40 md:hidden transition-opacity duration-300 ${
-          isMenuOpen ? 'opacity-100 pointer-events-auto' : 'opacity-0 pointer-events-none'
+          isMenuOpen ? "opacity-100 pointer-events-auto" : "opacity-0 pointer-events-none"
         }`}
         onClick={toggleMenu}
       />
@@ -128,9 +124,7 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu */}
       <div
         className={`fixed top-20 md:top-24 left-0 right-0 bg-customCyan z-40 md:hidden transform transition-all duration-300 ease-in-out ${
-          isMenuOpen 
-            ? 'translate-y-0 opacity-100' 
-            : '-translate-y-full opacity-0'
+          isMenuOpen ? "translate-y-0 opacity-100" : "-translate-y-full opacity-0"
         }`}
       >
         <div className="flex flex-col py-4 border-b-2 border-cyan-800">
@@ -142,7 +136,7 @@ const Navbar: React.FC = () => {
                   pathname === item.href ? activeClass : defaultClass
                 }`}
                 style={{
-                  animationDelay: `${index * 100}ms`
+                  animationDelay: `${index * 100}ms`,
                 }}
               >
                 <span className="inline-block transform transition-transform duration-300 hover:translate-x-2">
@@ -151,11 +145,11 @@ const Navbar: React.FC = () => {
               </button>
             </Link>
           ))}
-          
+
           {/* Contact Info in Mobile Menu */}
           <div className="px-6 py-4 mt-4 border-t border-cyan-700">
-            <p className="text-cyan-200 text-sm mb-2">Contáctanos:</p>
-            <p className="text-white text-sm">📧 correodejovenes@yahoo.com.ar</p>
+            <p className="text-cyan-200 text-sm mb-2">{mobileContactInfo.title}</p>
+            <p className="text-white text-sm">📧 {mobileContactInfo.email}</p>
           </div>
         </div>
       </div>

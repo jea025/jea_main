@@ -1,0 +1,35 @@
+{
+  "navigation": {
+    "menuItems": [
+      {
+        "id": "inicio",
+        "label": "INICIO",
+        "href": "/home"
+      },
+      {
+        "id": "conocenos-mas",
+        "label": "CONÓCENOS MÁS",
+        "href": "/journalism"
+      },
+      {
+        "id": "galeria",
+        "label": "GALERÍA",
+        "href": "/news"
+      },
+      {
+        "id": "contacto",
+        "label": "CONTACTO",
+        "href": "/contact"
+      }
+    ],
+    "logo": {
+      "src": "/j-logo.svg",
+      "alt": "Jóvenes en Acción Logo",
+      "homeLink": "/home"
+    },
+    "mobileContactInfo": {
+      "title": "Contáctanos:",
+      "email": "correodejovenes@yahoo.com.ar"
+    }
+  }
+}
