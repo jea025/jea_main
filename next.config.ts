@@ -45,14 +45,8 @@ const nextConfig: NextConfig = {
     removeConsole: process.env.NODE_ENV === 'production',
   },
 
-  devIndicators: {
-    buildActivity: false,
-    buildActivityPosition: 'bottom-right',
-  },
-
   experimental: {
     optimizePackageImports: ['react-bootstrap', 'react-icons'],
-    devOverlay: false,
   },
 };
 
