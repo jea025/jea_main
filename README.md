@@ -1,36 +1,78 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Jóvenes en Acción - Sitio Web Oficial
 
-## Getting Started
+Sitio web oficial de la ONG Jóvenes en Acción, un programa multimedial, educativo y social que facilita e impulsa la reflexión, expresión y la participación de jóvenes con valores y compromiso social.
 
-First, run the development server:
+## 🚀 Tecnologías
+
+- **Next.js 15** - Framework React para producción
+- **TypeScript** - Tipado estático
+- **Tailwind CSS** - Estilos
+- **React Bootstrap** - Componentes UI
+- **React Slick** - Carruseles
+
+## 💻 Desarrollo Local
+
+### Prerequisitos
+
+- Node.js 18 o superior
+- npm o yarn
+
+### Instalación
 
 ```bash
+# Clonar el repositorio
+git clone [URL_DEL_REPO]
+
+# Instalar dependencias
+npm install
+
+# Ejecutar en modo desarrollo
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3001](http://localhost:3001) with your browser to see the result.
+El sitio estará disponible en [http://localhost:3000](http://localhost:3000)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Scripts disponibles
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```bash
+npm run dev      # Modo desarrollo
+npm run build    # Compilar para producción
+npm run start    # Ejecutar versión de producción
+npm run lint     # Verificar código
+```
 
-## Learn More
+## 📦 Deploy en Vercel
 
-To learn more about Next.js, take a look at the following resources:
+Este proyecto está optimizado para ser desplegado en Vercel:
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Conecta tu repositorio de GitHub a Vercel
+2. Vercel detectará automáticamente Next.js
+3. Deploy automático en cada push a main
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+[![Deploy with Vercel](https://vercel.com/button)](https://vercel.com/new)
 
-## Deploy on Vercel
+## 📁 Estructura del Proyecto
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+```
+├── app/                 # Páginas y rutas (App Router)
+│   ├── home/           # Página principal
+│   ├── news/           # Noticias
+│   ├── journalism/     # Periodismo
+│   ├── contact/        # Contacto
+│   └── links/          # Enlaces
+├── components/         # Componentes reutilizables
+├── public/            # Archivos estáticos (imágenes, etc.)
+└── vercel.json        # Configuración de Vercel
+```
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 🌎 Región de Deploy
+
+El sitio está configurado para desplegarse en la región **São Paulo (gru1)**, la más cercana a Argentina, para mejor rendimiento.
+
+## 📝 Licencia
+
+Proyecto de [Jóvenes en Acción](https://www.jovenesaccion.org.ar)
+
+---
+
+**Desarrollado con ❤️ para la comunidad de Jóvenes en Acción**
