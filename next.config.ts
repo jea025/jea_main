@@ -15,6 +15,7 @@ const nextConfig: NextConfig = {
     minimumCacheTTL: 60,
     dangerouslyAllowSVG: true,
     qualities: [75, 85, 90, 95, 100],
+    unoptimized: false,
   },
   
   async headers() {
@@ -25,6 +26,10 @@ const nextConfig: NextConfig = {
           {
             key: 'Content-Disposition',
             value: 'inline',
+          },
+          {
+            key: 'Cache-Control',
+            value: 'public, max-age=31536000, immutable',
           },
         ],
       },
