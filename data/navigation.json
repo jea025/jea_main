@@ -15,11 +15,6 @@
         "id": "galeria",
         "label": "GALERÍA",
         "href": "/news"
-      },
-      {
-        "id": "contacto",
-        "label": "CONTACTO",
-        "href": "/contact"
       }
     ],
     "logo": {
