@@ -1,5 +1,4 @@
 "use client";
-import "bootstrap/dist/css/bootstrap.min.css";
 import Carousel from "react-bootstrap/Carousel";
 import ExampleCarouselImage from "./ExampleCarouselImage";
 import { useState } from "react";
@@ -27,10 +26,13 @@ export default function ControlledCarousel() {
   const slides = carouselData.hero.slides;
 
   return (
-    <Carousel activeIndex={index} onSelect={handleSelect}>
-      {slides.map((slide) => (
+    <Carousel activeIndex={index} onSelect={handleSelect} interval={5000}>
+      {slides.map((slide, idx) => (
         <Carousel.Item key={slide.id}>
-          <ExampleCarouselImage img={imageMap[slide.image]} />
+          <ExampleCarouselImage 
+            img={imageMap[slide.image]} 
+            priority={idx === 0}
+          />
           <Carousel.Caption>
             <p>{slide.category}</p>
             <h2>

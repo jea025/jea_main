@@ -9,9 +9,9 @@ const nextConfig: NextConfig = {
         pathname: '/**',
       },
     ],
+    formats: ['image/webp', 'image/avif'],
   },
   
-
   async redirects() {
     return [
       {
@@ -19,8 +19,14 @@ const nextConfig: NextConfig = {
         destination: '/home',
         permanent: true,
       },
-      
     ];
+  },
+
+  // Optimizaciones de rendimiento
+  swcMinify: true,
+  
+  compiler: {
+    removeConsole: process.env.NODE_ENV === 'production',
   },
 };
 
