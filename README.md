@@ -76,3 +76,7 @@ Proyecto de [Jóvenes en Acción](https://www.jovenesaccion.org.ar)
 ---
 
 **Desarrollado con ❤️ para la comunidad de Jóvenes en Acción**
+
+## Contenido backupeado de la página original, en la sección Noticias
+
+Ver el archivo `detalles.json`.
