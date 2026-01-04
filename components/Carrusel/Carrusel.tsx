@@ -3,6 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 import ExampleCarouselImage from "./ExampleCarouselImage";
 import { useState } from "react";
 import carouselData from "@/data/carousel.json";
+import { StaticImageData } from "next/image";
 
 // Importar imágenes dinámicamente
 import car1 from "../../public/car1.jpeg";
@@ -10,7 +11,7 @@ import car2 from "../../public/car2.jpg";
 import car3 from "../../public/car3.jpeg";
 
 // Mapeo de imágenes
-const imageMap: Record<string, any> = {
+const imageMap: Record<string, StaticImageData> = {
   "/car1.jpeg": car1,
   "/car2.jpg": car2,
   "/car3.jpeg": car3,
