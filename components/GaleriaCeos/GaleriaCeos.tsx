@@ -159,7 +159,7 @@ export default function GaleriaCeos() {
     return () => window.removeEventListener('keydown', handleKeyDown);
   }, [imagenSeleccionada, obtenerImagenesActuales, cerrarModal]);
 
-  const renderGaleria = (imagenes: ImagenGaleria[], nombreGaleria: string) => (
+  const renderGaleria = (imagenes: ImagenGaleria[], nombreGaleria: string, isFirstSection: boolean = false) => (
     <div className="galeria-grid">
       {imagenes.map((imagen, index) => (
         <div 
@@ -181,6 +181,7 @@ export default function GaleriaCeos() {
               className="imagen-galeria"
               fill
               sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              priority={isFirstSection && index === 0}
             />
             <div className="overlay">
               <div className="overlay-content">
@@ -216,7 +217,7 @@ export default function GaleriaCeos() {
           </p>
         </div>
 
-        {renderGaleria(imagenesGaleriaCeos, 'ceos')}
+        {renderGaleria(imagenesGaleriaCeos, 'ceos', true)}
       </div>
 
       {/* Segunda sección - Alumnos Secundarios */}
