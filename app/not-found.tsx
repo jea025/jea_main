@@ -28,7 +28,7 @@ export default function NotFound() {
           </Link>
           
           <Link 
-            href="/news"
+            href="/gallery"
             className="bg-white hover:bg-gray-50 text-customCyan font-semibold py-3 px-8 rounded-lg border-2 border-customCyan transition-all duration-300 hover:scale-105"
           >
             Ver galería
